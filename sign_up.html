@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- these are the meta tags of them page and stylesheets that i use to apply the same style
+         for both sign in and sign up page -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/logo.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/form-style.css">
+    <title>Community Voice/Sign UP</title>
+</head>
+
+<!-- thses are the most specific styles that i apply to those elements that are
+     located only in this page -->
+<style>
+    /* this media query uses for aliging the form in the center of the page in mobile device */
+    @media only screen and (max-width: 600px) {
+        #background-photo img {
+            height: 300px !important;
+        }
+
+        #content {
+            margin-top: 20% !important;
+        }
+    }
+
+    /* this media query uses for aliging the form in the center of the page in tablet or bigger than mobile */
+    @media only screen and (max-width: 1000px) {
+        #background-photo img {
+            height: auto !important;
+        }
+
+        #content {
+            margin-top: 5% !important;
+        }
+    }
+
+    html {
+        font-size: 62.5%;
+        text-align: center;
+        height: auto;
+    }
+
+    #content h1 {
+        font-size: 2rem;
+        text-align: center;
+        margin: 2% auto 1% auto;
+    }
+
+    form input[type="checkbox"] {    
+        width: auto;
+        margin: 3px;
+    }
+
+    form label {
+        font-size: 1.1rem;
+        border: none;
+    }
+
+    #content p {
+        font-size: 1.1rem;
+        margin: 2px;
+    }
+
+    #content p a {
+        color: black;
+        text-decoration: none;
+    }
+</style>
+
+<body>
+    <!-- this act like a navigation bar for the website -->
+    <header>
+        <img src="images/logo.png" alt="logo">
+    </header>
+
+    <div id="background-photo">
+        <img src="images/brunderburg.jpg" alt="" width="100%" height="300px">
+    </div>
+
+    <div id="content">
+        <h1>REGISTER</h1>
+        <!-- as far as we don't have any database yet, so when user submit the email and password 
+             it will go to the index or the main page for now -->
+        <form action="home.html" target="_self">
+            <!-- these are requied because we need to check them wheater they are the same with the
+                 database data or not when we connect a database to it -->
+            <input type="text" placeholder="Name" id="name" required> <br>
+            <input type="text" placeholder="Surname" id="surname" required> <br>
+            <input type="number" placeholder="Phone Number" id="phone" required> <br>
+            <input type="email" placeholder="Email" id="email" required> <br>
+            <input type="password" placeholder="Password" id="password" required> <br>
+            <input type="password" placeholder="Confirm Password" id="password" required> <br>
+            <select name="language" id="language" style="color: #A0D0DF;" required>
+                <option value="English" selected>English</option>
+                <option value="German">German</option>
+                <option value="Persian">Persian</option>
+                <option value="French">French</option>
+            </select> <br>
+            <label for="aggrement"><input type="checkbox" id="aggrement" required>I agree to the term and policy</label> <br>
+            <input type="submit" id="sign-in" value="SIGN UP">
+        </form>
+        <!-- when user is new then it will open the sign up page for the user -->
+        <p>Already have an account? <a href="sign_in.html">SIGN IN</a></p>
+    </div>
+</body>
+</html>
