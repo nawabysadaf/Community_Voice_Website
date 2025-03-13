@@ -1,18 +1,18 @@
 import express, { request, response } from 'express'
 import { logger } from './middlewares/logger.js' 
-// import path from 'path'
-// import { fileURLToPath } from 'url'
+import path from 'path'
+import { fileURLToPath } from 'url'
 
-// // make a .gitignore file, and add it to the project
-// const __filename = fileURLToPath(import.meta.url)
-// const __dirname = path.dirname(__filename)
+// make a .gitignore file, and add it to the project
+const __filename = fileURLToPath(import.meta.url)
+const __dirname = path.dirname(__filename)
 
 // importing and assigning the express and port number
 const app = express()
 const PORT = 3000
 
 app.use(logger)
-//app.use('/community-voice', express.static('public'))
+app.use('/community-voice', express.static('public'))
 app.use(express.urlencoded({ extended: true }))
 
 // this route is for the signing in page and will respond with directing to the home page
