@@ -3,24 +3,24 @@
 This project aims to creat a platform where citizens of Berlin can report city infrastructural problems that they see in their everyday life to the municipality.
 
 Sign up page:
-where users can create an account for themselves before accessing to other data in the project.
+Is for the new users who wants to create a new account for herself/himself and then can record a city report.
 
 Sign in page:
-where users can log in to thier exciting account in the system.
-
-Index page:
-where everyone can see it but for going further they should create an account for themselves first.
+Is for logging in to your exciting account in the community voice.
 
 Home page:
-where users have access to all related data.
+Is for giving you more information about the whole project and make you able to use community voice.
+
+Index page:
+Is just for showing information but for recording a new report you need to be register first.
 
 Profile page:
-where make the users to edit thier information in the system and see the number of reports they recorded so far and other informations.
+Is for letting the users to change some information about them and also to see thier points and number of reports that you recorded.
 
 Report page:
-where users can record thier reports using different categories.
+Is the main page of community voice that let user to record thier reports through us.
 
 Track page:
-User can track the status of their report.
+Is another page that let the users to see and track thier reports.
 
-This website has been made using HTML and CSS.
+This website has been made using HTML and CSS for the design and front side and Express JS for backend and routing.
