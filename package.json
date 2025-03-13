@@ -1,0 +1,19 @@
+{
+  "name": "community_voice_second_version",
+  "version": "1.0.0",
+  "description": "se_project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EffatNawaby/SE_Project_Community_Voice.git"
+  },
+  "author": "Sadaf_Nawaby",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EffatNawaby/SE_Project_Community_Voice/issues"
+  },
+  "homepage": "https://github.com/EffatNawaby/SE_Project_Community_Voice#readme"
+}
