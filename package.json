@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/EffatNawaby/SE_Project_Community_Voice/issues"
   },
-  "homepage": "https://github.com/EffatNawaby/SE_Project_Community_Voice#readme"
+  "homepage": "https://github.com/EffatNawaby/SE_Project_Community_Voice#readme",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
 }
