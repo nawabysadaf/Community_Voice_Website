@@ -23,7 +23,7 @@ form input, form select, form option {
     width: 30rem;
 }
 
-form input: focus, select:focus {
+form input:focus, select:focus {
     outline: 0.7px solid #A0D0DF;
     color: #A0D0DF;
 }
@@ -32,7 +32,7 @@ form input::placeholder {
     color: #A0D0DF;
 }
 
-form input: focus {
+form input:focus {
     border: none !important;
 }
 

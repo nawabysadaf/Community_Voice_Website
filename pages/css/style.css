@@ -174,72 +174,65 @@ footer div.report a {
     margin: auto;
     margin-top: 10px;
     margin-bottom: 10px;
-  }
+}
   
-  .tracktext {
-      text-align: center;
-      margin-bottom: 30px;
-  }
-  
-  .progress-container {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      width: 80%;
-      max-width: 600px;
-      margin: auto;
-  }
-  
-  .step {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-  }
-  
-  .circle {
-      width: 80px;
-      height: 80px;
-      border-radius: 50%;
-      border: 2px solid #afd0de;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-bottom: 10px;
-  }
-  
-  .circle img {
-      width: 40px;
-      height: 40px;
-  }
-  
-  .label {
-      font-size: 16px;
-      color: #333;
-  }
-  
-  .line {
-      flex-grow: 1;
-      height: 2px;
-      background-color: #afd0de;
-      margin: 0 10px;
-  }
-  
-  .simloc {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-  }
-  
-  .simloctext {
-      display: flex;
-      justify-content: center;
-      margin: 10px;
-  }
-
-  #myChart {
+.tracktext {
     text-align: center;
+    margin-bottom: 30px;
+}
+  
+.progress-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     width: 80%;
+    max-width: 600px;
     margin: auto;
-    padding: 15px;
-  }
+}
+  
+.step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+  
+.circle {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 2px solid #afd0de;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+  
+.circle img {
+    width: 40px;
+    height: 40px;
+}
+  
+.label {
+    font-size: 16px;
+    color: #333;
+}
+  
+.line {
+    flex-grow: 1;
+    height: 2px;
+    background-color: #afd0de;
+    margin: 0 10px;
+}
+  
+.simloc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.simloctext {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
