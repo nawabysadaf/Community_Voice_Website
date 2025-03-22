@@ -15,17 +15,17 @@ const __dirname = path.dirname(__filename)
 app.use('/', express.static(path.join(__dirname, 'pages')));
 
 // this route is for the signing in page and will respond with directing to the home page
-app.post('/community-voice/page/sign-in', (request, response) => {
+app.post('/sign-in', (request, response) => {
     response.sendFile(path.join(__dirname, 'pages', 'home.html'))
 })
 
 // this route is for the signing up or registration page and will respond with directing to the home page
-app.post('/community-voice/page/sign-up', (request, response) => {
+app.post('/sign-up', (request, response) => {
     response.sendFile(path.join(__dirname, 'pages', 'home.html'))
 })
 
 // the existing route handling code
-app.get('/community-voice/page/:page', (request, response) => {
+app.get('/:page', (request, response) => {
   const page = request.params.page;
   response.sendFile(path.join(__dirname, 'pages', `${page}.html`));
 });

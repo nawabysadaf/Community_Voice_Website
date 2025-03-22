@@ -8,7 +8,7 @@
     <link rel="icon" href="images/logo.png">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/form-style.css">
-    <title>Community Voice/Sign IN</title>
+    <title>Community Voice/Sign UP</title>
 </head>
 
 <!-- thses are the most specific styles that i apply to those elements that are
@@ -16,15 +16,23 @@
 <style>
     /* this media query uses for aliging the form in the center of the page in mobile device */
     @media only screen and (max-width: 600px) {
+        #background-photo img {
+            height: 300px !important;
+        }
+
         #content {
-            margin-top: 50%;
+            margin-top: 20% !important;
         }
     }
 
     /* this media query uses for aliging the form in the center of the page in tablet or bigger than mobile */
     @media only screen and (max-width: 1000px) {
+        #background-photo img {
+            height: auto !important;
+        }
+
         #content {
-            margin-top: 20%;
+            margin-top: 5% !important;
         }
     }
 
@@ -37,14 +45,17 @@
     #content h1 {
         font-size: 2rem;
         text-align: center;
-        margin-top: 10%;
+        margin: 2% auto 1% auto;
     }
 
-    #content img {
-        width: 10rem;
-        height: 10rem;
-        border-radius: 50%;
-        margin: 1rem;
+    form input[type="checkbox"] {    
+        width: auto;
+        margin: 3px;
+    }
+
+    form label {
+        font-size: 1.1rem;
+        border: none;
     }
 
     #content p {
@@ -64,21 +75,34 @@
         <img src="images/logo.png" alt="logo">
     </header>
 
-    <!-- this is the whole content of the page -->
+    <div id="background-photo">
+        <img src="images/brunderburg.jpg" alt="" width="100%" height="300px">
+    </div>
+
     <div id="content">
-        <h1>WELCOME</h1>
-        <img src="images/profile-pic.jpg" alt="profile-pic">
+        <h1>REGISTER</h1>
         <!-- as far as we don't have any database yet, so when user submit the email and password 
              it will go to the index or the main page for now -->
-        <form action="/community-voice/page/sign-in" target="_self" method="POST">
+        <form action="/sign-up" target="_self" method="POST">
             <!-- these are requied because we need to check them wheater they are the same with the
                  database data or not when we connect a database to it -->
+            <input type="text" placeholder="Name" id="name" required> <br>
+            <input type="text" placeholder="Surname" id="surname" required> <br>
+            <input type="number" placeholder="Phone Number" id="phone" required> <br>
             <input type="email" placeholder="Email" id="email" required> <br>
-            <input type="password" placeholder="Password" id="password" minlength="8" required> <br>
-            <input type="submit" id="sign-in" value="SIGN IN">
+            <input type="password" placeholder="Password" id="password" required> <br>
+            <input type="password" placeholder="Confirm Password" id="password" required> <br>
+            <select name="language" id="language" style="color: #A0D0DF;" required>
+                <option value="English" selected>English</option>
+                <option value="German">German</option>
+                <option value="Persian">Persian</option>
+                <option value="French">French</option>
+            </select> <br>
+            <label for="aggrement"><input type="checkbox" id="aggrement" required>I agree to the term and policy</label> <br>
+            <input type="submit" id="sign-in" value="SIGN UP">
         </form>
         <!-- when user is new then it will open the sign up page for the user -->
-        <p>New in here? <a href="/community-voice/page/sign-up">SIGN UP</a></p>
+        <p>Already have an account? <a href="/sign-in">SIGN IN</a></p>
     </div>
 </body>
 </html>
