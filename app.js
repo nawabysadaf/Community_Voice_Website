@@ -1,10 +1,12 @@
 import express, { request, response } from 'express'
+import mongoose from 'mongoose'
 import { logger } from './middlewares/logger.js' 
 import path from 'path'
 import { fileURLToPath } from 'url'
 
 const app = express()
 const PORT = 3000
+mongoose.connect('mongodb://127.0.0.1:27017/communityVoiceDatabse')
 
 // seting the engine to ejs
 app.set('view engine', 'ejs')
