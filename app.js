@@ -6,7 +6,8 @@ import { fileURLToPath } from 'url'
 const app = express()
 const PORT = 3000
 
-// make a .gitignore file, and add it to the project
+// seting the engine to ejs
+app.set('view engine', 'ejs')
 
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
