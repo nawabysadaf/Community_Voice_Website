@@ -19,6 +19,10 @@ const report = new mongoose.Schema({
         required: true,
     },
     image: {
-        
+
     }
-})
+});
+
+const Reports = mongoose.model('Reports', report);
+
+module.exports = Reports;
