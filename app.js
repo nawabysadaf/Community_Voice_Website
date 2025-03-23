@@ -8,6 +8,7 @@ const PORT = 3000
 
 // seting the engine to ejs
 app.set('view engine', 'ejs')
+app.set('views', './pages')
 
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
@@ -28,7 +29,7 @@ app.post('/sign-up', (request, response) => {
 // the existing route handling code
 app.get('/:page', (request, response) => {
   const page = request.params.page;
-  response.sendFile(path.join(__dirname, 'pages', `${page}.html`));
+  response.render(`${page}`)
 });
 
 app.listen(PORT, () => {
