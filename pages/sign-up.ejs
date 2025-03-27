@@ -78,19 +78,19 @@
         <form action="/sign-up" target="_self" method="POST">
             <!-- these are requied because we need to check them wheater they are the same with the
                  database data or not when we connect a database to it -->
-            <input type="text" placeholder="Name" id="name" required> <br>
-            <input type="text" placeholder="Surname" id="surname" required> <br>
-            <input type="number" placeholder="Phone Number" id="phone" required> <br>
-            <input type="email" placeholder="Email" id="email" required> <br>
-            <input type="password" placeholder="Password" id="password" required> <br>
-            <input type="password" placeholder="Confirm Password" id="password" required> <br>
+            <input type="text" placeholder="Name" id="name" name="name" required> <br>
+            <input type="text" placeholder="Surname" id="surname" name="surname" required> <br>
+            <input type="number" placeholder="Phone Number" id="phone" name="phone" required> <br>
+            <input type="email" placeholder="Email" id="email" name="email" required> <br>
+            <input type="password" placeholder="Password" id="password" name="password" required> <br>
+            <input type="password" placeholder="Confirm Password" id="confirm-password" name="onfirm-password" required> <br>
             <select name="language" id="language" style="color: #A0D0DF;" required>
                 <option value="English" selected>English</option>
                 <option value="German">German</option>
                 <option value="Persian">Persian</option>
                 <option value="French">French</option>
             </select> <br>
-            <label for="aggrement"><input type="checkbox" id="aggrement" required>I agree to the term and policy</label> <br>
+            <label for="aggrement"><input type="checkbox" id="aggrement" name="aggrement" required>I agree to the term and policy</label> <br>
             <input type="submit" id="sign-in" value="SIGN UP">
         </form>
         <!-- when user is new then it will open the sign up page for the user -->
