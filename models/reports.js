@@ -18,11 +18,12 @@ const report = new mongoose.Schema({
         type: String,
         required: true,
     },
-    image: {
-
-    }
+    createdAt: {
+        type: Date,
+        default: Date.now,
+    },
 });
 
 const Reports = mongoose.model('Report', report);
 
-module.exports = Reports;
+export default Reports;
