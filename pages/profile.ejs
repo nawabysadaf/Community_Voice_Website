@@ -57,17 +57,18 @@ div.personal-info {
 
     <!-- profile content of the person -->
     <div class="profile-content">
-        <img src="images/profile-pic.jpg" width="80px" height="80px" style="border-radius: 50%;">
+        <img src="images/profile.jpg" width="80px" height="80px" style="border-radius: 50%;">
         <h4>Sadaf Nawaby</h4>
-        <h5>Premium User</h5>
         <h5 style="display: none;" id="bonus">123 BONUS</h5>
     </div>
 
     <!-- personal information of the person -->
     <div class="personal-info">
         <form action="#" method="POST">
-            <input type="number" placeholder="Phone Number" id="phone"> <br>
-            <input type="email" placeholder="Email" id="email"> <br>
+            <input type="text" placeholder="Name" id="name" name="name"> <br>
+            <input type="text" placeholder="Surname" id="surname" name="surname"> <br>
+            <input type="number" placeholder="Phone Number" id="phone" name="phone"> <br>
+            <input type="email" placeholder="Email" id="email" name="email"> <br>
             <select name="language" id="language" style="color: #A0D0DF;">
                 <option value="English" selected>English</option>
                 <option value="German">German</option>
@@ -77,6 +78,8 @@ div.personal-info {
             <input type="button" value="Save Changes" id="update">
         </form>
     </div>
+
+    <!-- delete account here -->
 
     <!-- information cards of the page -->
     <div class="profile-body">

@@ -32,7 +32,7 @@ app.post('/sign-in', (request, response) => {
 })
 
 // this route is for the signing up or registration page and will respond with directing to the home page
-app.post('/sign-up', async (request, response) => {
+app.post('/sign-up',  (request, response) => {
     const { name, surname, phone, email, password, language } = request.body;
 
     if (!name || !surname || !phone || !email || !password) {
