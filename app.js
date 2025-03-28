@@ -10,9 +10,13 @@ import Reports from './models/reports.js'
 
 const app = express()
 const PORT = 3000
-mongoose.connect('mongodb://127.0.0.1:27017/communityVoiceDatabse')
-    // .then(() => console.log('databse connected'))
-    // .catch(error => console.error(error))
+
+
+mongoose.connect('mongodb://127.0.0.1:27017/communityVoiceDatabse', {
+    useNewUrlParser: true,
+    useUnifiedTopology: true
+});
+
 
 // seting the engine to ejs
 app.set('view engine', 'ejs')
@@ -37,7 +41,7 @@ app.post('/sign-up',  (request, response) => {
     const { name, surname, phone, email, password, language } = request.body;
 
     if (!name || !surname || !phone || !email || !password) {
-        response.render('home')
+        response.render('home');
     }
 
     const newUser = new Users({
@@ -55,11 +59,13 @@ app.post('/sign-up',  (request, response) => {
 });
 
 // this route is for the reporting page and will respond with directing to the track page
-app.post('/track',  (request, response) => {
+app.post('/report',  (request, response) => {
     const { name, category, address, details } = request.body;
 
     if (!name || !category || !address || !details ) {
-        response.render('track')
+        response.render('track');
+        console.log("missing details")
+        return
     }
 
     const newReport = new Reports({
@@ -74,28 +80,22 @@ app.post('/track',  (request, response) => {
         .catch(err => response.status(500).send('Error creating report: ' + err.message));
 });
 
-// the existing route handling code
-app.get('/:page', (request, response) => {
-    const page = request.params.page;
-    response.render(`${page}`);
-  
-    // if (!request.session.userId) {
-    //   return response.redirect('/sign-in'); 
-    // }
-  
-    // Users.findById(request.session.userId)
-    //   .then(user => {
-    //     if (user) {
-    //       response.render(`${page}`, { user });
-    //     } else {
-    //       response.redirect('/sign-in');
-    //     }
-    //   })
-    //   .catch(err => {
-    //     console.error(err);
-    //     response.status(500).send('Internal Server Error');
-    //   });
-});
+// // the existing route handling code
+// app.get('/:page', async (request, response) => {
+//     const page = request.params.page;
+//     response.render(`${page}`)
+// });
+
+app.get("/reports", async (request, response) => {
+    try{
+        const reports = await Reports.find()
+        reports.forEach(report => {
+            response.status(200).render("home")
+        })
+    } catch (error){
+        console.error(error)
+    }
+})
 
 app.listen(PORT, () => {
     console.log(`starting server on port ${PORT}`)
