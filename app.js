@@ -6,6 +6,7 @@ import { fileURLToPath } from 'url'
 import { error } from 'console'
 import favicon from 'serve-favicon'
 import Reports from './models/reports.js'
+import methodOverride from 'method-override'
 
 const app = express()
 const PORT = 3000
@@ -31,6 +32,7 @@ app.use(express.urlencoded({ extended: true }));
 // Serve static files from the 'pages' directory
 app.use('/', express.static(path.join(__dirname, 'pages')));
 app.use(favicon(path.join(__dirname, 'pages', 'favicon.ico')));
+app.use(methodOverride("_method"));
 
 // this route is for the reporting page and will respond with directing to the track page
 app.post('/report',  (request, response) => {
@@ -86,6 +88,36 @@ app.get("/edit/:id", async (request, response) => {
         response.status(500).send(error.message);
     }
 });
+
+// setting route for report with id
+app.get("/track/:id", async (request, response) => {
+    try {
+        const report = await Reports.findById(request.params.id);
+
+        if (!report) {
+            return response.status(404).send("Report not found");
+        }
+
+        response.status(200).render("track", { report });
+    } catch (error) {
+        console.error(error);
+        response.status(500).send(error.message);
+    }
+});
+
+// update report
+app.put("/edit/:id", async (request, response) => {
+    try {
+        const report = await Reports.findByIdAndUpdate(request.params.id, {$set: request.body}, {new: true, runValidators: true})
+        if(!report) {
+            return response.status(404).send("Report not found");
+        }
+        response.redirect(`/track/${report._id}`)
+    }catch(error) {
+        console.error(error);
+        response.status(500).send(error.message);
+    }
+})
 
 // the existing route handling code
 app.get('/:page', (request, response) => {
