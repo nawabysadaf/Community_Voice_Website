@@ -119,6 +119,19 @@ app.put("/edit/:id", async (request, response) => {
     }
 })
 
+app.delete("/delete/:id", async (request, response) => {
+    try {
+        const report = await Reports.findByIdAndDelete(request.params.id);
+        if(!report) {
+            return response.status(404).send("Report not found");
+        }
+        response.redirect("/home")
+    }catch(error) {
+        console.log(error);
+        response.status(500).send(error.message);
+    }
+})
+
 // the existing route handling code
 app.get('/:page', (request, response) => {
     const page = request.params.page;
