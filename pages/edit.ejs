@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- include the head from head.ejs file -->
+<%- include('includes/head', {title: 'CommunityVoice/Edit'}) %>
+
+<body>
+    <!-- navigation -->
+    <%- include('includes/navigation') %>
+
+    <div>
+        <h2>Edit Your Report</h2>
+        <form action="/report/<%= report.email %>" method="POST">
+            <input type="text" placeholder="Name" value="<%= report.name %>" id="name" name="name"> <br>
+            <input type="email" placeholder="Email" value="<%= report.email %>" id="email" name="email"> <br>
+            <input type="text" placeholder="Catagory" value="<%= report.category %>" id="category" name="category"> <br>
+            <input type="text" placeholder="Report Address" value="<%= report.address %>" id="address" name="address"> <br>
+            <textarea name="details" id="detail" value="<%= report.detail %>" placeholder="Write details in here..." rows="6" cols="4"></textarea> <br>
+            <button>Update</button>
+        </form>
+    </div>
+
+    <!-- include footer -->
+    <%- include('includes/footer') %>
+</body>
+</html>

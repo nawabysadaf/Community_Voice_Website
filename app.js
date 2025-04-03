@@ -58,34 +58,24 @@ app.post('/report',  (request, response) => {
         .catch(err => response.status(500).send('Error creating report: ' + err.message));
 });
 
+// setting get routing to read data from database
 app.get("/track", async (request, response) => {
     try{
-        let reports = await Reports.find()
+        let reports = await Reports.find().sort({ _id: -1 }).limit(1)
         response.render('track', { reports })
     } catch (error){
         console.error(error)
     }
 })
 
-// get route for home page
-app.get("/", (request, response) => {
-    response.render("home")
-})
 
-// get route for profile page
-app.get("/profile", (request, response) =>{
-    response.render("profile")
-})
 
-// get route for report page
-app.get("/report", (request, response) => {
-    response.render("report")
-})
+// the existing route handling code
+app.get('/:page', (request, response) => {
+    const page = request.params.page;
+    response.render(`${page}`)
+});
 
-// get route for track page
-app.get("/track", (request, response) => {
-    response.render("track")
-})
 
 // listener route
 app.listen(PORT, () => {

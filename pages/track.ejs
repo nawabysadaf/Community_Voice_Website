@@ -27,6 +27,17 @@
         padding: 10px !important;
     }
 }
+
+button {
+    padding: 0.5rem 2rem;
+    border: none;
+    border-radius: 5%;
+}
+
+button a {
+    color: white;
+    text-decoration: none;
+}
 </style>
 <body>
     <!-- navigation -->
@@ -63,10 +74,9 @@
     </div>
 </div>
 
-<div style="text-align: center;">
-    <h3>Your Report</h3>
-    <div style="text-align: center;">
-    <ul style="border: 1px solid black; width: 30%; margin: auto; padding: 1rem;">
+<div style="border: 1px solid #A0D0DF; width: 30%; margin: auto; padding: 2rem; border-radius: 5%;">
+    <ul>
+        <h3>Your Report</h3> <br>
         <% reports.forEach(report => { %>
             <li>
                 <strong>Name:</strong> <%= report.name %><br>
@@ -77,7 +87,10 @@
                 <strong>Created At:</strong> <%= report.createdAt.toLocaleString() %>
             </li>
         <% }); %>
-    </ul>
+    </ul> <br>
+    <div style="text-align: center;">
+        <button style="background-color: rgb(42, 148, 42);"><a href="/edit">EDIT</a></button>
+        <button style="background-color: rgb(215, 54, 54);"><a href="#">DELETE</a></button>
     </div>
 </div>
 <br>
