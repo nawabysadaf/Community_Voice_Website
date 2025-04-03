@@ -38,8 +38,6 @@
     </h1>
     <h2 class="tracktext"> 
         Your report was successfully submitted.
-        <br>
-        You recieved 50 bonus points.
     </h2>
 </div>
 <div class="progress-container" style="margin-bottom: 40px;">
@@ -64,6 +62,25 @@
         <div class="label">Processed</div>
     </div>
 </div>
+
+<div style="text-align: center;">
+    <h3>Your Report</h3>
+    <div style="text-align: center;">
+    <ul style="border: 1px solid black; width: 30%; margin: auto; padding: 1rem;">
+        <% reports.forEach(report => { %>
+            <li>
+                <strong>Name:</strong> <%= report.name %><br>
+                <strong>Email:</strong> <%= report.email %><br>
+                <strong>Category:</strong> <%= report.category %><br>
+                <strong>Address:</strong> <%= report.address %><br>
+                <strong>Details:</strong> <%= report.details %><br>
+                <strong>Created At:</strong> <%= report.createdAt.toLocaleString() %>
+            </li>
+        <% }); %>
+    </ul>
+    </div>
+</div>
+<br>
 <br>
 
     <!-- include footer -->

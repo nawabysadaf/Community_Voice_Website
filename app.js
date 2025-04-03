@@ -10,12 +10,14 @@ import Reports from './models/reports.js'
 const app = express()
 const PORT = 3000
 
-
-mongoose.connect('mongodb://127.0.0.1:27017/communityVoiceDatabse', {
-    useNewUrlParser: true,
-    useUnifiedTopology: true
-});
-
+try {
+    mongoose.connect('mongodb://127.0.0.1:27017/communityVoiceDatabse', {
+        useNewUrlParser: true,
+        useUnifiedTopology: true
+    });
+} catch (error) {
+    console.error('Error connecting to MongoDB:', error);
+}
 
 // seting the engine to ejs
 app.set('view engine', 'ejs')
@@ -49,9 +51,21 @@ app.post('/report',  (request, response) => {
     });
 
     newReport.save()
-        .then(() => response.status(201).render('track'))
+        .then(() => {
+            response.status(201).render('track')
+            console.log("report created")
+        })
         .catch(err => response.status(500).send('Error creating report: ' + err.message));
 });
+
+app.get("/track", async (request, response) => {
+    try{
+        let reports = await Reports.find()
+        response.render('track', { reports })
+    } catch (error){
+        console.error(error)
+    }
+})
 
 // get route for home page
 app.get("/", (request, response) => {
@@ -71,18 +85,6 @@ app.get("/report", (request, response) => {
 // get route for track page
 app.get("/track", (request, response) => {
     response.render("track")
-})
-
-// get route to access data from database
-app.get("/reports", async (request, response) => {
-    try{
-        const reports = await Reports.find()
-        reports.forEach(report => {
-            response.status(200).render("home")
-        })
-    } catch (error){
-        console.error(error)
-    }
 })
 
 // listener route
