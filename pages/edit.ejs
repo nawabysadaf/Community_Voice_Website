@@ -8,16 +8,17 @@
     <%- include('includes/navigation') %>
 
     <div>
-        <h2>Edit Your Report</h2>
-        <form action="/report/<%= report.email %>" method="POST">
-            <input type="text" placeholder="Name" value="<%= report.name %>" id="name" name="name"> <br>
-            <input type="email" placeholder="Email" value="<%= report.email %>" id="email" name="email"> <br>
-            <input type="text" placeholder="Catagory" value="<%= report.category %>" id="category" name="category"> <br>
-            <input type="text" placeholder="Report Address" value="<%= report.address %>" id="address" name="address"> <br>
-            <textarea name="details" id="detail" value="<%= report.detail %>" placeholder="Write details in here..." rows="6" cols="4"></textarea> <br>
-            <button>Update</button>
-        </form>
-    </div>
+        <h2 style="text-align: center; padding: 1.5rem;">Edit Your Report</h2>
+        <form action="/edit/<%- report._id %>?_method=PUT" method="POST">
+            <input type="text" id="name" name="name" value="<%- report.name %>"> <br>
+            <input type="email" id="email" name="email" value="<%- report.email %>"> <br>
+            <input type="text" id="category" name="category" value="<%- report.category %>"> <br>
+            <input type="text" id="address" name="address" value="<%- report.address %>"> <br>
+            <textarea name="details" id="detail" rows="6" cols="4"><%- report.details %></textarea> <br>
+            <input type="text" id="createdAt" name="createdAt" value="<%- report.createdAt.toLocaleDateString('en-US') %>" readonly> <br>
+            <input type="submit" value="Update">
+        </form> 
+    </div> <br>
 
     <!-- include footer -->
     <%- include('includes/footer') %>

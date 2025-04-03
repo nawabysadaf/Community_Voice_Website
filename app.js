@@ -58,17 +58,34 @@ app.post('/report',  (request, response) => {
         .catch(err => response.status(500).send('Error creating report: ' + err.message));
 });
 
-// setting get routing to read data from database
+// setting get route to read data from database
 app.get("/track", async (request, response) => {
     try{
-        let reports = await Reports.find().sort({ _id: -1 }).limit(1)
-        response.render('track', { reports })
+        const report = await Reports.find().sort({ _id: -1 }).limit(1)
+        response.render('track', { report })
     } catch (error){
         console.error(error)
     }
 })
 
+// Setting GET route to edit data from database
+app.get("/edit/:id", async (request, response) => {
+    try {
+        console.log(request.params.id);
+        // Fetch the document by ID without updating it
+        const report = await Reports.findById(request.params.id);
+        
+        if (!report) {
+            return response.status(404).send("Report not found");
+        }
 
+        // Render the edit page with the fetched document
+        response.status(200).render('edit', { report });
+    } catch (error) {
+        console.error(error);
+        response.status(500).send(error.message);
+    }
+});
 
 // the existing route handling code
 app.get('/:page', (request, response) => {
