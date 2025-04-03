@@ -1,6 +1,5 @@
 import express, { request, response } from 'express'
 import mongoose from 'mongoose'
-import Users from './models/users.js'
 import { logger } from './middlewares/logger.js' 
 import path from 'path'
 import { fileURLToPath } from 'url'
@@ -31,38 +30,11 @@ app.use(express.urlencoded({ extended: true }));
 app.use('/', express.static(path.join(__dirname, 'pages')));
 app.use(favicon(path.join(__dirname, 'pages', 'favicon.ico')));
 
-// this route is for the signing in page and will respond with directing to the home page
-app.post('/sign-in', (request, response) => {
-    response.render('home')
-});
-
-// this route is for the signing up or registration page and will respond with directing to the home page
-app.post('/sign-up',  (request, response) => {
-    const { name, surname, phone, email, password, language } = request.body;
-
-    if (!name || !surname || !phone || !email || !password) {
-        response.render('home');
-    }
-
-    const newUser = new Users({
-        name,
-        surname,
-        phone,
-        email,
-        password,
-        language
-    });
-
-    newUser.save()
-        .then(() => response.status(201).render('home'))
-        .catch(err => response.status(500).send('Error creating user: ' + err.message));
-});
-
 // this route is for the reporting page and will respond with directing to the track page
 app.post('/report',  (request, response) => {
-    const { name, category, address, details } = request.body;
+    const { name, email, category, address, details } = request.body;
 
-    if (!name || !category || !address || !details ) {
+    if (!name || !email || !category || !address || !details ) {
         response.render('track');
         console.log("missing details")
         return
@@ -70,6 +42,7 @@ app.post('/report',  (request, response) => {
 
     const newReport = new Reports({
         name,
+        email,
         category,
         address,
         details
@@ -80,12 +53,27 @@ app.post('/report',  (request, response) => {
         .catch(err => response.status(500).send('Error creating report: ' + err.message));
 });
 
-// // the existing route handling code
-// app.get('/:page', async (request, response) => {
-//     const page = request.params.page;
-//     response.render(`${page}`)
-// });
+// get route for home page
+app.get("/", (request, response) => {
+    response.render("home")
+})
 
+// get route for profile page
+app.get("/profile", (request, response) =>{
+    response.render("profile")
+})
+
+// get route for report page
+app.get("/report", (request, response) => {
+    response.render("report")
+})
+
+// get route for track page
+app.get("/track", (request, response) => {
+    response.render("track")
+})
+
+// get route to access data from database
 app.get("/reports", async (request, response) => {
     try{
         const reports = await Reports.find()
@@ -97,6 +85,7 @@ app.get("/reports", async (request, response) => {
     }
 })
 
+// listener route
 app.listen(PORT, () => {
     console.log(`starting server on port ${PORT}`)
 })

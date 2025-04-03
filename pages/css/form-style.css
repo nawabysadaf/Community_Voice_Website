@@ -42,11 +42,6 @@ form input[type="submit"], input[type="button"] {
     cursor: pointer;
 }
 
-form input[type="checkbox"] {    
-    width: auto;
-    margin: 3px;
-}
-
 form label {
     font-size: 1.1rem;
     border: none;
