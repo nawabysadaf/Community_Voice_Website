@@ -35,16 +35,16 @@ app.use(favicon(path.join(__dirname, 'pages', 'favicon.ico')));
 app.use(methodOverride("_method"));
 
 // this route is for the reporting page and will respond with directing to the track page
-app.post('/report',  (request, response) => {
+app.post('/track', (request, response) => {
     const { name, email, category, address, details } = request.body;
 
     if (!name || !email || !category || !address || !details ) {
-        response.render('track');
+        response.render('track', {report: [report]});
         console.log("missing details")
         return
     }
 
-    const newReport = new Reports({
+    const report = new Reports({
         name,
         email,
         category,
@@ -52,9 +52,9 @@ app.post('/report',  (request, response) => {
         details
     });
 
-    newReport.save()
+    report.save()
         .then(() => {
-            response.status(201).render('track')
+            response.status(201).render('track', {report: [report]})
             console.log("report created")
         })
         .catch(err => response.status(500).send('Error creating report: ' + err.message));
@@ -82,7 +82,7 @@ app.get("/edit/:id", async (request, response) => {
         }
 
         // Render the edit page with the fetched document
-        response.status(200).render('edit', { report });
+        response.status(200).render('edit', { report: [report] });
     } catch (error) {
         console.error(error);
         response.status(500).send(error.message);
@@ -98,7 +98,7 @@ app.get("/track/:id", async (request, response) => {
             return response.status(404).send("Report not found");
         }
 
-        response.status(200).render("track", { report });
+        response.status(200).render("track", { report: [report] });
     } catch (error) {
         console.error(error);
         response.status(500).send(error.message);
@@ -119,6 +119,7 @@ app.put("/edit/:id", async (request, response) => {
     }
 })
 
+// delete report
 app.delete("/delete/:id", async (request, response) => {
     try {
         const report = await Reports.findByIdAndDelete(request.params.id);
