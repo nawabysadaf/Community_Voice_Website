@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- include the head from head.ejs file -->
+<%- include('includes/head', {title: 'CommunityVoice/Track'}) %>
+
+<style>
+@media only screen and (max-width: 600px) {
+    .navbar {
+        padding: 0px 10px !important;
+    }
+
+    .navbar a {
+        font-size: 13px !important;
+    }
+
+    footer {
+        padding: 20px 50px !important;
+    }
+
+    footer div.contact {
+        width: 100% !important;
+        padding: 10px !important;
+    }
+
+    footer div.report {
+        width: 100% !important;
+        padding: 10px !important;
+    }
+}
+
+button {
+    width: 80%;
+    margin: auto;
+    padding: 0.5rem 2rem;
+    border: none;
+    border-radius: 5%;
+    margin-bottom: 0.5rem;
+}
+
+button a {
+    color: white;
+    text-decoration: none;
+}
+</style>
+<body>
+    <!-- navigation -->
+    <%- include('includes/navigation') %>
+
+<div class="trackbody">
+    <h1>
+        <img class="congrat-bonus" src="images/bonus.png" width="80px" height="80px">
+    </h1>
+    <h2 class="tracktext"> 
+        Your report was successfully submitted.
+    </h2>
+</div>
+<div class="progress-container" style="margin-bottom: 40px;">
+    <div class="step">
+        <div class="circle">
+            <img src="images/recieved.png" alt="Received">
+        </div>
+        <div class="label">Received</div>
+    </div>
+    <div class="line"></div>
+    <div class="step">
+        <div class="circle">
+            <img src="images/in process.png" alt="In Process">
+        </div>
+        <div class="label">In Process</div>
+    </div>
+    <div class="line"></div>
+    <div class="step">
+        <div class="circle">
+            <img src="images/proceed.png" alt="Processed">
+        </div>
+        <div class="label">Processed</div>
+    </div>
+</div>
+
+<div style="border: 1px solid #A0D0DF; width: 30%; margin: auto; padding: 2rem; border-radius: 5%;">
+    <ul>
+        <h3>Your Report</h3> <br>
+        <% report.forEach(report => { %>
+            <li>
+                <strong>Name:</strong> <%= report.name %><br>
+                <strong>Email:</strong> <%= report.email %><br>
+                <strong>Category:</strong> <%= report.category %><br>
+                <strong>Address:</strong> <%= report.address %><br>
+                <strong>Details:</strong> <%= report.details %><br>
+                <strong>Created At:</strong> <%= report.createdAt.toLocaleString() %>
+            </li>
+    </ul> <br>
+    <div style="text-align: center;">
+        <button style="background-color: rgb(42, 148, 42);"><a href="/edit/<%= report._id %>">EDIT</a></button>
+        <form action="/delete/<%- report._id %>?_method=DELETE" method="POST">
+            <button type="submit" style="background-color: rgb(219, 71, 71); color: white;">Delete</button>
+        </form>
+    </div>
+    <% }); %>
+</div>
+<br>
+<br>
+
+    <!-- include footer -->
+    <%- include('includes/footer') %>
+    
+</body>
+</html>
