@@ -6,7 +6,6 @@ Welcome to **Community Voice**. This is a web-based platform that empowers **Ber
 ## 🔗 Live Demo
 
 Check out the live version here: [Community Voice Demo](https://link)
-Go To
 
 ## 💻 Tech Stack
 
