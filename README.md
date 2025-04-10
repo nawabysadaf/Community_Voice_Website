@@ -19,25 +19,21 @@ Check out the live version here: [Community Voice Demo](https://link)
 1. Download the **Zip** file or clone the repo with:
 
 ```bash
-# Clone the repository
 git clone https://github.com/your-username/community-voice.git
 ```
 2. Navigate into the **project** directory:
 
 ```bash
-# Navigate into the project directory
 cd community-voice
 ```
 
 3. Install dependencies:
 ```bash
-# Install dependencies
 npm install
 ```
 4. **Start** the server:
 
 ```bash
-# Start the server
 npm start
 ```
 
