@@ -1,26 +1,34 @@
-# SE_Project_Community_Voice
+# 🗣️ Community Voice – Berlin City Issue Reporting Platform
 
-This project aims to creat a platform where citizens of Berlin can report city infrastructural problems that they see in their everyday life to the municipality.
+## 📌 Project Description
+Welcome to **Community Voice**. This is a web-based platform that empowers **Berlin** citizens to report city infrastructure issues—like potholes, broken lights, or damaged signs—directly to the local municipality. By connecting residents with city services, the platform encourages civic engagement and helps improve urban living conditions.
 
-Sign up page:
-Is for the new users who wants to create a new account for herself/himself and then can record a city report.
+---
 
-Sign in page:
-Is for logging in to your exciting account in the community voice.
+## 💻 Tech Stack
 
-Home page:
-Is for giving you more information about the whole project and make you able to use community voice.
+- **Frontend**: HTML & CSS
+- **Backend**: Express.js (Node.js framework)
+- **Routing & Logic**: Handled by Express
+- **Database**: MongoDB
 
-Index page:
-Is just for showing information but for recording a new report you need to be register first.
+## 🚀 Getting Started (Local Setup)
 
-Profile page:
-Is for letting the users to change some information about them and also to see thier points and number of reports that you recorded.
+> Prerequisites:
+- Node.js installed
+- Git installed
 
-Report page:
-Is the main page of community voice that let user to record thier reports through us.
+### Installation Steps
 
-Track page:
-Is another page that let the users to see and track thier reports.
+```bash
+# Clone the repository
+git clone https://github.com/your-username/community-voice.git
 
-This website has been made using HTML and CSS for the design and front side and Express JS for backend and routing.
+# Navigate into the project directory
+cd community-voice
+
+# Install dependencies
+npm install
+
+# Start the server
+npm start
