@@ -9,8 +9,8 @@ Check out the live version here: [Community Voice Demo](https://link)
 
 ## 💻 Tech Stack
 
-- **Frontend**: HTML & CSS
-- **Backend**: Express.js (Node.js framework)
+- **Frontend**: HTML, CSS, and JavaScript
+- **Backend**: Express.js, and Node.js
 - **Routing & Logic**: Handled by Express
 - **Database**: MongoDB
 
