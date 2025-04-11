@@ -44,7 +44,7 @@ app.post('/report',  (request, response) => {
         return
     }
 
-    const newReport = new Reports({
+    const reports = new Reports({
         name,
         email,
         category,
@@ -52,9 +52,9 @@ app.post('/report',  (request, response) => {
         details
     });
 
-    newReport.save()
+    reports.save()
         .then(() => {
-            response.status(201).render('track')
+            response.status(201).render('track', {reports: reports})
             console.log("report created")
         })
         .catch(err => response.status(500).send('Error creating report: ' + err.message));
@@ -63,12 +63,13 @@ app.post('/report',  (request, response) => {
 // setting get route to read data from database
 app.get("/track", async (request, response) => {
     try{
-        const report = await Reports.find().sort({ _id: -1 }).limit(1)
-        response.render('track', { report })
+        const reports = await Reports.find().sort({ _id: -1 }).limit(1);
+        console.log("Reports:", reports);
+        response.render('track', { reports });
     } catch (error){
-        console.error(error)
+        console.error(error);
     }
-})
+});
 
 // Setting GET route to edit data from database
 app.get("/edit/:id", async (request, response) => {
