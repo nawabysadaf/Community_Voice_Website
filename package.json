@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/EffatNawaby/SE_Project_Community_Voice#readme",
   "dependencies": {
+    "dotenv": "^16.5.0",
     "ejs": "^3.1.10",
     "express": "^4.21.2",
     "express-session": "^1.18.1",

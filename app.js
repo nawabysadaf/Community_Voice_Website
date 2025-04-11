@@ -7,12 +7,13 @@ import { error } from 'console'
 import favicon from 'serve-favicon'
 import Reports from './models/reports.js'
 import methodOverride from 'method-override'
+import 'dotenv/config'
 
 const app = express()
-const PORT = 3000
 
+// mongodb+srv://admin:HyZkv3aexlAlbcJcd@cluster0.kga59m9.mongodb.net/communityVoiceDatabse?retryWrites=true&w=majority&appName=Cluster0
 try {
-    mongoose.connect('mongodb://127.0.0.1:27017/communityVoiceDatabse', {
+    mongoose.connect(process.env.MONGODB_URI, {
         useNewUrlParser: true,
         useUnifiedTopology: true
     });
@@ -141,6 +142,6 @@ app.get('/:page', (request, response) => {
 
 
 // listener route
-app.listen(PORT, () => {
-    console.log(`starting server on port ${PORT}`)
+app.listen(process.env.PORT, () => {
+    console.log(`starting server on port ${process.env.PORT}`)
 })
