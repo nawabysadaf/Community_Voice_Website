@@ -1,26 +1,47 @@
-# SE_Project_Community_Voice
+# 🗣️ Community Voice – Berlin City Issue Reporting Platform
 
-This project aims to creat a platform where citizens of Berlin can report city infrastructural problems that they see in their everyday life to the municipality.
+## 📌 Project Description
+Welcome to **Community Voice**. This is a web-based platform that empowers **Berlin** citizens to report city infrastructure issues—like potholes, broken lights, or damaged signs—directly to the local municipality. By connecting residents with city services, the platform encourages civic engagement and helps improve urban living conditions.
 
-Sign up page:
-Is for the new users who wants to create a new account for herself/himself and then can record a city report.
+## 🔗 Live Demo
 
-Sign in page:
-Is for logging in to your exciting account in the community voice.
+Check out the live version here: [Community Voice Demo](https://link)
 
-Home page:
-Is for giving you more information about the whole project and make you able to use community voice.
+## 💻 Tech Stack
 
-Index page:
-Is just for showing information but for recording a new report you need to be register first.
+- **Frontend**: HTML, CSS, and JavaScript
+- **Backend**: Express.js, and Node.js
+- **Routing & Logic**: Handled by Express
+- **Database**: MongoDB
 
-Profile page:
-Is for letting the users to change some information about them and also to see thier points and number of reports that you recorded.
+## 🚀 Setup
 
-Report page:
-Is the main page of community voice that let user to record thier reports through us.
+1. Download the **Zip** file or clone the repo with:
 
-Track page:
-Is another page that let the users to see and track thier reports.
+```bash
+git clone https://github.com/your-username/community-voice.git
+```
+2. Navigate into the **project** directory:
 
-This website has been made using HTML and CSS for the design and front side and Express JS for backend and routing.
+```bash
+cd community-voice
+```
+
+3. Install dependencies:
+```bash
+npm install
+```
+4. **Start** the server:
+
+```bash
+npm start
+```
+
+5. Go to [http://localhost:3000](http://localhost:3000) in your browser to view the app.
+
+
+## ✍️ Author
+
+**Sadaf Nawaby**  
+📧 sadafnawaby@gmail.com  
+🐙 [GitHub](https://github.com/nawabysadaf)
