@@ -15,7 +15,7 @@
             <input type="text" id="category" name="category" value="<%- report.category %>"> <br>
             <input type="text" id="address" name="address" value="<%- report.address %>"> <br>
             <textarea name="details" id="detail" rows="6" cols="4"><%- report.details %></textarea> <br>
-            <input type="text" id="createdAt" name="createdAt" value="<%- report.createdAt.toLocaleDateString('en-US') %>" readonly> <br>
+            <input type="text" id="createdAt" name="createdAt" value="<%- report.createdAt ? report.createdAt.toLocaleDateString('en-US') : 'N/A' %>" readonly> <br>
             <input type="submit" value="Update">
         </form> 
     </div> <br>
