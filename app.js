@@ -82,7 +82,7 @@ app.get("/edit/:id", async (request, response) => {
         }
 
         // Render the edit page with the fetched document
-        response.status(200).render('edit', { report: [report] });
+        response.status(200).render('edit', { report: report });
     } catch (error) {
         console.error(error);
         response.status(500).send(error.message);
