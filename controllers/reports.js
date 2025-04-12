@@ -1,32 +1,48 @@
 import express from 'express';
 import Reports from '../models/reports.js';
+import { body, validationResult } from 'express-validator';
 
 const router = express.Router();
 
 // this route is for the reporting page and will respond with directing to the track page
-router.post('/track', (request, response) => {
-    const { name, email, category, address, details } = request.body;
+router.post('/track', 
+    [
+        // Express Validator rules
+        body('name').notEmpty().withMessage('Name is required'),
+        body('email').isEmail().withMessage('Valid email is required'),
+        body('category').notEmpty().withMessage('Category is required'),
+        body('address').notEmpty().withMessage('Address is required'),
+        body('details').isLength({ min: 10 }).withMessage('Details must be at least 10 characters long')
+    ],    
+    (request, response) => {
 
-    if (!name || !email || !category || !address || !details ) {
-        response.render('track', {report: [report]});
-        console.log("missing details");
-        return
-    }
+        // Check for validation errors
+        const errors = validationResult(request);
 
-    const report = new Reports({
-        name,
-        email,
-        category,
-        address,
-        details
-    });
+        if (!errors.isEmpty()) {
+            // If validation fails, render the form with error messages
+            return response.status(400).render('track', {
+                errors: errors.array(),
+                report: [],
+            });
+        }
 
-    report.save()
-        .then(() => {
-            response.status(201).render('track', {report: [report]});
-            console.log("report created");
-        })
-        .catch(err => response.status(500).send('Error creating report: ' + err.message));
+        const { name, email, category, address, details } = request.body;
+
+        const report = new Reports({
+            name,
+            email,
+            category,
+            address,
+            details
+        });
+
+        report.save()
+            .then(() => {
+                response.status(201).render('track', {report: [report]});
+                console.log("report created");
+            })
+            .catch(err => response.status(500).send('Error creating report: ' + err.message));
 });
 
 // setting get route to read data from database

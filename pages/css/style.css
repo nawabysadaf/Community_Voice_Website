@@ -100,7 +100,7 @@
     margin-top: 10px;
 }
 
-.feedback-form, .report-form {
+.report-form {
     background-color: #F9F8F8;
     width: 100%;
     margin: auto;
@@ -108,15 +108,15 @@
     padding: 30px;
 }
 
-.feedback-form p, .report-form p {
+.report-form p {
     font-size: 17px;
 }
 
-.feedback-form form, .report-form form {
+.report-form form {
     margin: 15px;
 }
 
-.feedback-form form input, textarea, .report-form form input, textarea {
+.report-form form input, textarea {
     background-color: white;
     color: #A0D0DF;
     outline: none;
@@ -127,13 +127,12 @@
     margin: 3px;
 }
 
-.feedback-form form input::placeholder, textarea::placeholder {
-    color: #A0D0DF;
-}
-
-.feedback-form form input[type="submit"] {
-    background-color: #A0D0DF;
-    color: black;
+div#view {
+    border: 1px solid #A0D0DF;
+    width: 30%;
+    margin: auto;
+    padding: 2rem;
+    border-radius: 5%;
 }
 
 footer {

@@ -3,11 +3,46 @@
 <!-- include the head from head.ejs file -->
 <%- include('includes/head', {title: 'CommunityVoice/Edit'}) %>
 
+<style>
+    /* this media query uses for aliging the form in the center of the page in mobile device */
+    @media only screen and (max-width: 600px) {
+        div#edit_form form {
+            text-align: center !important;
+            margin: auto !important;
+        }
+
+        div#edit_form form input, textarea {
+            width: 80% !important;
+        }
+
+        .navbar {
+            padding: 0px 10px !important;
+        }
+
+        .navbar a {
+            font-size: 13px !important;
+        }
+
+        footer {
+            padding: 20px 50px !important;
+        }
+
+        footer div.contact {
+            width: 100% !important;
+            padding: 10px !important;
+        }
+
+        footer div.report {
+            width: 100% !important;
+            padding: 10px !important;
+        }
+    }
+</style>
 <body>
     <!-- navigation -->
     <%- include('includes/navigation') %>
 
-    <div>
+    <div id="edit_form">
         <h2 style="text-align: center; padding: 1.5rem;">Edit Your Report</h2>
         <form action="/edit/<%- report._id %>?_method=PUT" method="POST">
             <input type="text" id="name" name="name" value="<%- report.name %>"> <br>
