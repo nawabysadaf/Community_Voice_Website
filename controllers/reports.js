@@ -29,6 +29,7 @@ router.post('/track',
 
         const { name, email, category, address, details } = request.body;
         console.log('🚀 Attempting to save report...');
+        console.log(request.body.report)
         const report = new Reports({
             name,
             email,
