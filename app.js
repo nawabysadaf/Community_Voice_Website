@@ -10,6 +10,8 @@ import { PORT } from './config/app.js';
 import reportsRouter from './controllers/reports.js';
 
 const app = express();
+const connectDB = require('./config/database.js');
+connectDB();
 
 // seting the engine to ejs
 app.set('view engine', 'ejs');
