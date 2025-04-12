@@ -8,10 +8,10 @@ import methodOverride from 'method-override';
 import './config/database.js';
 import { PORT } from './config/app.js';
 import reportsRouter from './controllers/reports.js';
+import dotenv from 'dotenv';
 
 const app = express();
-const connectDB = require('./config/database.js');
-connectDB();
+dotenv.config();
 
 // seting the engine to ejs
 app.set('view engine', 'ejs');
@@ -42,5 +42,6 @@ app.get('/:page', (request, response) => {
 
 // listener route
 app.listen(PORT, () => {
+    console.log(process.env.MONGODB_URI);
     console.log(`starting server on port ${PORT}`)
 });
