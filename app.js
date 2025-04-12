@@ -28,6 +28,10 @@ app.use(methodOverride("_method"));
 // Use the reports router for all report-related routes
 app.use('/', reportsRouter);
 
+app.get('/', (request, response) => {
+    response.render('home')
+});
+
 // the existing route handling code
 app.get('/:page', (request, response) => {
     const page = request.params.page;
