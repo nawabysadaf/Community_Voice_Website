@@ -8,10 +8,10 @@ import methodOverride from 'method-override';
 import './config/database.js';
 import { PORT } from './config/app.js';
 import reportsRouter from './controllers/reports.js';
-import dotenv from 'dotenv';
+import 'dotenv/config'
 
 const app = express();
-dotenv.config();
+// dotenv.config();
 
 // seting the engine to ejs
 app.set('view engine', 'ejs');
@@ -19,6 +19,7 @@ app.set('views', './pages');
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
+
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
@@ -42,6 +43,6 @@ app.get('/:page', (request, response) => {
 
 // listener route
 app.listen(PORT, () => {
-    console.log(process.env.MONGODB_URI);
+    // console.log(process.env.MONGODB_URI);
     console.log(`starting server on port ${PORT}`)
 });
