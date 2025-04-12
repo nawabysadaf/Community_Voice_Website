@@ -14,7 +14,7 @@ router.post('/track',
         body('address').notEmpty().withMessage('Address is required'),
         body('details').isLength({ min: 10 }).withMessage('Details must be at least 10 characters long')
     ],    
-    (request, response) => {
+    async (request, response) => {
 
         // Check for validation errors
         const errors = validationResult(request);
@@ -28,7 +28,7 @@ router.post('/track',
         }
 
         const { name, email, category, address, details } = request.body;
-
+        console.log('🚀 Attempting to save report...');
         const report = new Reports({
             name,
             email,
@@ -37,7 +37,7 @@ router.post('/track',
             details
         });
 
-        report.save()
+        await report.save()
             .then(() => {
                 response.status(201).render('track', {report: [report]});
                 console.log("report created");

@@ -11,7 +11,7 @@ import reportsRouter from './controllers/reports.js';
 import 'dotenv/config'
 
 const app = express();
-// dotenv.config();
+
 
 // seting the engine to ejs
 app.set('view engine', 'ejs');
