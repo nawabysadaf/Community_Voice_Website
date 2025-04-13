@@ -1,9 +1,9 @@
 import mongoose from "mongoose";
-import { MONGODB_URI } from './app.js';
+// import { MONGODB_URI } from './app.js';
 
 
-// const MONGODB_URI = process.env.MONGODB_URI; // ✅ Now it exists
-// console.log('🔐 MONGODB_URI:', MONGODB_URI); // Double check it's correct
+const MONGODB_URI = process.env.MONGODB_URI; // ✅ Now it exists
+console.log('🔐 MONGODB_URI:', MONGODB_URI); // Double check it's correct
 
 mongoose
   .connect(MONGODB_URI,{
