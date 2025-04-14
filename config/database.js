@@ -1,4 +1,5 @@
 import mongoose from "mongoose";
+import 'dotenv/config';
 // import { MONGODB_URI } from './app.js';
 
 

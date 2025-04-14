@@ -12,7 +12,6 @@ import 'dotenv/config'
 
 const app = express();
 
-
 // seting the engine to ejs
 app.set('view engine', 'ejs');
 app.set('views', './pages');
