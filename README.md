@@ -1,11 +1,12 @@
 # 🗣️ Community Voice – Berlin City Issue Reporting Platform
 
 ## 📌 Project Description
+
 Welcome to **Community Voice**. This is a web-based platform that empowers **Berlin** citizens to report city infrastructure issues—like potholes, broken lights, or damaged signs—directly to the local municipality. By connecting residents with city services, the platform encourages civic engagement and helps improve urban living conditions.
 
 ## 🔗 Live Demo
 
-Check out the live version here: [Community Voice Demo](https://link)
+Check out the live version here: [Community Voice Demo](https://communityvoice.onrender.com)
 
 ## 💻 Tech Stack
 
@@ -21,6 +22,7 @@ Check out the live version here: [Community Voice Demo](https://link)
 ```bash
 git clone https://github.com/your-username/community-voice.git
 ```
+
 2. Navigate into the **project** directory:
 
 ```bash
@@ -28,9 +30,11 @@ cd community-voice
 ```
 
 3. Install dependencies:
+
 ```bash
 npm install
 ```
+
 4. **Start** the server:
 
 ```bash
@@ -38,7 +42,6 @@ npm start
 ```
 
 5. Go to [http://localhost:3000](http://localhost:3000) in your browser to view the app.
-
 
 ## ✍️ Author
 
