@@ -1,4 +1,4 @@
-# 🗣️ Community Voice – Berlin City Issue Reporting Platform
+# 🗣️ Community Voice -– Berlin City Issue Reporting Platform
 
 ## 📌 Project Description
 
