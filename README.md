@@ -88,6 +88,8 @@ To uninstall Community Voice, remove the project directory:
     rm -rf community-voice
 ```
 
+## Troubleshooting
+
 | Problem                          | Cause                                   | Solution                                                                                 |
 |-----------------------------------|-----------------------------------------|------------------------------------------------------------------------------------------|
 | Server Fails to Start             | Missing dependencies or incorrect Node.js version | - Ensure Node.js v18+ is installed.<br>- Run:<br> <pre>npm install<br>npm start</pre>    |
