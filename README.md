@@ -1,4 +1,4 @@
-# ![Project Logo](pages/images/readme-logo.jpg)  
+# ![Project Logo]()  
 
 # Community Voice – Berlin City Issue Reporting Platform
 Live Demo: [Community Voice Demo](https://communityvoice.onrender.com)
