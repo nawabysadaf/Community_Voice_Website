@@ -22,16 +22,12 @@ Welcome to **Community Voice**. This is a web-based platform that empowers **Ber
 
 This guide explains the steps and instructions required to install **Community Voice** on supported operating systems. It also covers how to configure, start, use, and uninstall Community Voice.
 
----
-
 ## Intended Result
 
 After installation, you'll be able to:
 - Run the app using `npm start`
 - Access the app at `http://localhost:3000`
 - Use the website to record a report
-
----
 
 ## Installation Process Summary
 
@@ -42,16 +38,12 @@ After installation, you'll be able to:
 | 3    | [Follow installation steps](#installation-steps)       | Step-by-step instructions      |
 | 4    | [Verify installation](#verify-installation)            | How to confirm installation    |
 
----
-
 ## System Requirements
 
 ### Supported Operating Systems
 - Windows 10+
 - macOS 11+
 - Linux (Ubuntu 20.04+)
-
----
 
 ## Before You Begin
 
@@ -60,7 +52,6 @@ Make sure you have the following prerequisites installed:
 - [npm](https://www.npmjs.com/) v9 or higher
 - [Git](https://git-scm.com/) (if cloning the repository)
 
----
 
 ## Installation Steps
 
