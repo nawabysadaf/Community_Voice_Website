@@ -24,180 +24,33 @@ This guide explains the steps and instructions required to install **Community V
 
 ---
 
-## Table of Installation Types
-
-|
- Type                
-|
- Description                                         
-|
- More Information                                    
-|
-|
----------------------
-|
------------------------------------------------------
-|
------------------------------------------------------
-|
-|
- Main (Local)        
-|
- Full-featured local installation                    
-|
- 
-[
-Local Installation
-](
-#local-installation
-)
-|
-|
- Lite                
-|
- Minimal version for quick setup                     
-|
-[
-Lite Installation
-](
-#lite-installation
-)
-|
-|
- Cloud (GitPod)      
-|
- Run instantly in the cloud with GitPod              
-|
-[
-Cloud Installation (GitPod)
-](
-#cloud-installation-gitpod
-)
-|
-|
- Cloud (CodeSpaces)  
-|
- Run instantly in the cloud with GitHub CodeSpaces   
-|
-[
-Cloud Installation (CodeSpaces)
-](
-#cloud-installation-codespaces
-)
-|
----
-
-## Overview
-
-|
- Version      
-|
- Build         
-|
- Release Date 
-|
- Status  
-|
-|
---------------
-|
---------------
-|
--------------
-|
----------
-|
-|
- v1.2.0       
-|
- 1.2.0        
-|
- 09/06/2025  
-|
- Latest  
-|
-|
- v1.1.0       
-|
- 1.1.0        
-|
- 01/04/2025  
-|
- Stable  
-|
-|
- v1.3.0-beta  
-|
- 1.3.0-beta   
-|
- 10/10/2025  
-|
- Beta    
-|
----
-
 ## Intended Result
 
 After installation, you'll be able to:
 - Run the app using `npm start`
 - Access the app at `http://localhost:3000`
-- Use available plugins and command flags
-- Download all necessary files
+- Use the website to record a report
 
 ---
 
 ## Installation Process Summary
 
-|
- Process Step 
-|
- More Information                       
-|
-|
---------------
-|
-----------------------------------------
-|
-|
 1.
  Check system requirements 
-|
-[
-Requirements
-](
-#system-requirements
-)
-|
-|
+
 2.
  Install prerequisites     
-|
-[
-Prerequisites
-](
-#before-you-begin
-)
-|
-|
+
 3.
  Follow installation steps 
-|
-[
-Step-by-step
-](
-#installation-steps
-)
-|
-|
+| Column 1 | Column 2 | Column 3 |
+|----------|----------|----------|
+| Row 1    | Data     | Example  |
+| Row 2    | More     | Info     |
+
 4.
- Verify installation       
-|
-[
-Verification
-](
-#verify-installation
-)
-|
+ Verify installation
+
 ---
 
 ## System Requirements
