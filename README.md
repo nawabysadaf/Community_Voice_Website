@@ -88,32 +88,10 @@ To uninstall Community Voice, remove the project directory:
     rm -rf community-voice
 ```
 
-## Troubleshooting
-
-### Problem: Server Fails to Start
-
-**Cause:**  
-Missing dependencies or incorrect Node.js version.
-
-**Solution:**  
-- Ensure Node.js v18+ is installed.
-- Run:
-```bash
-    npm install
-    npm start
-```
-
-### Problem: Port 3000 Is Already in Use
-
-**Cause:**  
-Another application is using port 3000.
-
-**Solution:**  
-- Close the conflicting application or process.
-- Or, start Community Voice on a different port:
-```bash
-    PORT=4000 npm start
-```
+| Problem                          | Cause                                   | Solution                                                                                 |
+|-----------------------------------|-----------------------------------------|------------------------------------------------------------------------------------------|
+| Server Fails to Start             | Missing dependencies or incorrect Node.js version | - Ensure Node.js v18+ is installed.<br>- Run:<br> <pre>npm install<br>npm start</pre>    |
+| Port 3000 Is Already in Use       | Another application is using port 3000  | - Close the conflicting application or process.<br>- Or, start Community Voice on a different port:<br> <pre>PORT=4000 npm start</pre> |
 
 ## Contributing Guidelines
 
