@@ -1,7 +1,7 @@
 # ![Project Logo](pages/images/logo-readme.png)  
 
 # Community Voice – Berlin City Issue Reporting Platform
-[Community Voice Demo](https://communityvoice.onrender.com)
+Live Demo: [Community Voice Demo](https://communityvoice.onrender.com)
 
 # Table of Contents
 - [Project Description](#project-description)
