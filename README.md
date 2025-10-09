@@ -119,7 +119,7 @@ To uninstall Community Voice, remove the project directory:
 
 If you encounter any other issues, please [contact us](mailto:sadafnawaby@gmail.com) or [open an issue](https://github.com/nawabysadaf/community-voice/issues).
 
-# {Concept Title}
+## Concept
 
 This article explains the basics of {concept} and how it works in {the tool or context}.  
 {Brief summary introducing the concept, its importance or relevance, and the scope of this document.}
@@ -139,14 +139,10 @@ This article explains the basics of {concept} and how it works in {the tool or c
 - By using {X}, {specify users/target audience} gain ...
 - To use {X}, you create {Y} ...
 
----
-
 {Add visual aid to complement your explanations visually.}
 
 ![{Image title, which concisely explains the image or figure}](path/to/image.png)
 *Figure: {Image title or annotation}*
-
----
 
 ## Background (Optional)
 
@@ -158,41 +154,9 @@ This article explains the basics of {concept} and how it works in {the tool or c
 - With the rise of {X}, the need for things such as {Y} has become paramount.
 - Over the past decade, {advancements in technology} have transformed the way ...
 
----
-
 ## Use Cases
 
 {Describe use cases and explain how a reader can benefit from the concept.}
-
----
-
-## Comparison of {Thing Being Compared} (Optional)
-
-| Option/Alternative | Description | Pros | Cons |
-|--------------------|-------------|------|------|
-| {Option 1}         | {Desc 1}    | {Pros 1} | {Cons 1} |
-| {Option 2}         | {Desc 2}    | {Pros 2} | {Cons 2} |
-
-*Table: {Table title which concisely explains the comparison.}*
-
----
-
-## Related Resources (Optional)
-
-If you would like to dive deeper or start implementing {concept}, check out the following resources:
-
-### How-to Guides
-- [Item 1](link1)
-- [Item 2](link2)
-
-### Linked Concepts
-- [Concept 1](link3)
-- [Concept 2](link4)
-
-### External Resources
-- [Resource 1](link5)
-- [Resource 2](link6)
-
 
 ## Contributing Guidelines
 
