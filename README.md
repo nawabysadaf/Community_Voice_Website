@@ -7,6 +7,7 @@ Live Demo: [Community Voice Demo](https://communityvoice.onrender.com)
 - [Project Description](#project-description)
 - [Project Dependencies](#project-dependencies)
 - [Community Voice Installation Guide](#community-voice-installation-guide)
+- [Troubleshooting](#troubleshooting)
 - [Contributing Guidelines](#contributing-guidelines)
 - [Additional Documentation](#additional-documentation)
 - [Terms of Use](#terms-of-use)
@@ -73,7 +74,6 @@ Make sure you have the following prerequisites installed:
 - [Node.js](https://nodejs.org/) v18 or higher
 - [npm](https://www.npmjs.com/) v9 or higher
 - [Git](https://git-scm.com/) (if cloning the repository)
-
 
 ## Installation Steps
 
