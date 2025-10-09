@@ -1,4 +1,6 @@
-# ![Project Logo](pages/images/logo-readme.png)  Community Voice -– Berlin City Issue Reporting Platform
+# ![Project Logo](pages/images/logo-readme.png)  
+
+# 🗣️ Community Voice -– Berlin City Issue Reporting Platform
 
 ## 📌 Project Description
 
