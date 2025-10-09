@@ -1,23 +1,23 @@
 # ![Project Logo](pages/images/logo-readme.png)  
 
-# 🗣️ Community Voice -– Berlin City Issue Reporting Platform
+# Community Voice -– Berlin City Issue Reporting Platform
 
-## 📌 Project Description
+## Project Description
 
 Welcome to **Community Voice**. This is a web-based platform that empowers **Berlin** citizens to report city infrastructure issues—like potholes, broken lights, or damaged signs—directly to the local municipality. By connecting residents with city services, the platform encourages civic engagement and helps improve urban living conditions.
 
-## 🔗 Live Demo
+## Live Demo
 
 Check out the live version here: [Community Voice Demo](https://communityvoice.onrender.com)
 
-## 💻 Tech Stack
+## Tech Stack
 
 - **Frontend**: HTML, CSS, and JavaScript
 - **Backend**: Express.js, and Node.js
 - **Routing & Logic**: Handled by Express
 - **Database**: MongoDB
 
-## 🚀 Setup
+## Setup
 
 1. Download the **Zip** file or clone the repo with:
 
