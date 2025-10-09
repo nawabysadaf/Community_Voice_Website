@@ -55,5 +55,5 @@ npm start
 ## Contact
 
 **Sadaf Nawaby**  
-[Email](sadafnawaby@gmail.com)  
-[GitHub](https://github.com/nawabysadaf)
+Email: sadafnawaby@gmail.com  
+GitHub: [GitHub](https://github.com/nawabysadaf)
