@@ -124,8 +124,6 @@ If you encounter any other issues, please [contact us](mailto:sadafnawaby@gmail.
 This article explains the basics of {concept} and how it works in {the tool or context}.  
 {Brief summary introducing the concept, its importance or relevance, and the scope of this document.}
 
----
-
 {Definition of the concept goes here. For example:}
 
 - {X} is ...
