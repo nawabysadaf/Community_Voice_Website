@@ -18,6 +18,28 @@ Welcome to **Community Voice**. This is a web-based platform that empowers **Ber
 
 ## Project Dependencies
 
+After cloning the repository, run `npm install` to install these packages:
+
+| Package             | Purpose/Usage                       |
+|---------------------|-------------------------------------|
+| dotenv              | Loads environment variables         |
+| ejs                 | Templating engine                   |
+| express             | Web server framework                |
+| express-session     | Session management for Express      |
+| express-validator   | Validation for Express requests     |
+| gridfs-stream       | Streams files to MongoDB GridFS     |
+| method-override     | Allows HTTP verbs like PUT/DELETE   |
+| mongodb             | MongoDB driver                      |
+| mongoose            | MongoDB object modeling             |
+| serve-favicon       | Serves favicon for Express apps     |
+
+**Development Only:**
+
+| Package   | Purpose/Usage                 |
+|-----------|------------------------------|
+| nodemon   | Automatically restarts server on code changes |
+
+
 # Community Voice Installation Guide
 
 This guide explains the steps and instructions required to install **Community Voice** on supported operating systems. It also covers how to configure, start, use, and uninstall Community Voice.
@@ -87,7 +109,7 @@ To uninstall Community Voice, remove the project directory:
 ```bash
     rm -rf community-voice
 ```
-##
+
 ## Troubleshooting
 
 | Problem                          | Cause                                   | Solution                                                                                 |
