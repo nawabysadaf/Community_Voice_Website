@@ -87,7 +87,7 @@ To uninstall Community Voice, remove the project directory:
 ```bash
     rm -rf community-voice
 ```
-
+##
 ## Troubleshooting
 
 | Problem                          | Cause                                   | Solution                                                                                 |
@@ -96,7 +96,7 @@ To uninstall Community Voice, remove the project directory:
 | Port 3000 Is Already in Use       | Another application is using port 3000  | - Close the conflicting application or process.<br>- Or, start Community Voice on a different port:<br> <pre>PORT=4000 npm start</pre> |
 
 If you encounter any other issues, please [contact us](mailto:sadafnawaby@gmail.com) or [open an issue](https://github.com/nawabysadaf/community-voice/issues).
-
+##
 ## Contributing Guidelines
 
 ## Additional Documentation
