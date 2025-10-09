@@ -118,10 +118,83 @@ To uninstall Community Voice, remove the project directory:
 | Port 3000 Is Already in Use       | Another application is using port 3000  | - Close the conflicting application or process.<br>- Or, start Community Voice on a different port:<br> <pre>PORT=4000 npm start</pre> |
 
 If you encounter any other issues, please [contact us](mailto:sadafnawaby@gmail.com) or [open an issue](https://github.com/nawabysadaf/community-voice/issues).
-##
-## Contributing Guidelines
 
-## Additional Documentation
+# {Concept Title}
+
+This article explains the basics of {concept} and how it works in {the tool or context}.  
+{Brief summary introducing the concept, its importance or relevance, and the scope of this document.}
+
+---
+
+{Definition of the concept goes here. For example:}
+
+- {X} is ...
+- {X} represents ...
+- {X} is connected to ...
+- {X} are organized {describe how} ...
+- {X} is similar to ...
+- {X} addresses the common pain points of ...
+- {X} solves the challenge of ...
+- By implementing {X}, users can ...
+- By using {X}, {specify users/target audience} gain ...
+- To use {X}, you create {Y} ...
+
+---
+
+{Add visual aid to complement your explanations visually.}
+
+![{Image title, which concisely explains the image or figure}](path/to/image.png)
+*Figure: {Image title or annotation}*
+
+---
+
+## Background (Optional)
+
+{Provide context, prehistory, or background information. Example wordings:}
+
+- The reason {X} is designed that way is because historically, ...
+- The idea of {X} originated from the growing demand for ...
+- Recent advancements in {X} and {Y} have opened up new possibilities for ...
+- With the rise of {X}, the need for things such as {Y} has become paramount.
+- Over the past decade, {advancements in technology} have transformed the way ...
+
+---
+
+## Use Cases
+
+{Describe use cases and explain how a reader can benefit from the concept.}
+
+---
+
+## Comparison of {Thing Being Compared} (Optional)
+
+| Option/Alternative | Description | Pros | Cons |
+|--------------------|-------------|------|------|
+| {Option 1}         | {Desc 1}    | {Pros 1} | {Cons 1} |
+| {Option 2}         | {Desc 2}    | {Pros 2} | {Cons 2} |
+
+*Table: {Table title which concisely explains the comparison.}*
+
+---
+
+## Related Resources (Optional)
+
+If you would like to dive deeper or start implementing {concept}, check out the following resources:
+
+### How-to Guides
+- [Item 1](link1)
+- [Item 2](link2)
+
+### Linked Concepts
+- [Concept 1](link3)
+- [Concept 2](link4)
+
+### External Resources
+- [Resource 1](link5)
+- [Resource 2](link6)
+
+
+## Contributing Guidelines
 
 ## Terms of Use
 
