@@ -17,6 +17,14 @@ Live Demo: [Community Voice Demo](https://communityvoice.onrender.com)
 
 Welcome to **Community Voice**. This is a web-based platform that empowers **Berlin** citizens to report city infrastructure issues—like potholes, broken lights, or damaged signs—directly to the local municipality. By connecting residents with city services, the platform encourages civic engagement and helps improve urban living conditions.
 
+## Conceptual Diagram
+
+![Conceptual Diagram](images/conceptual_diagram.png)
+
+## Architecture Diagram
+
+![Architecture Diagram](images/conceptual_diagram.png)
+
 ## Project Dependencies
 
 After cloning the repository, run `npm install` to install these packages:
