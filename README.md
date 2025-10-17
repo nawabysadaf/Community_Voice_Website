@@ -19,11 +19,11 @@ Welcome to **Community Voice**. This is a web-based platform that empowers **Ber
 
 ## Conceptual Diagram
 
-![Conceptual Diagram](images/conceptual_diagram.png)
+![Conceptual Diagram](pages/images/conceptrual_diagram.png)
 
 ## Architecture Diagram
 
-![Architecture Diagram](images/conceptual_diagram.png)
+![Architecture Diagram](pages/images/architecture_diagram.png)
 
 ## Project Dependencies
 
