@@ -222,6 +222,14 @@ Make sure you have:
 
 ## Code of Conduct
 
+Everyone interacting with this project is expected to show respect and kindness to others.
+
+- **Be welcoming:** Treat everyone with respect, regardless of background or skill level.
+- **Be considerate:** Constructive feedback and suggestions are encouraged, but please be polite and helpful.
+- **Keep it relevant:** Discussions and issues should stay focused on the project.
+
+If you notice unacceptable behavior, please let me know via the project's issue tracker or [contact](#contact) information.
+
 ## Contact
 
 **Sadaf Nawaby**  
