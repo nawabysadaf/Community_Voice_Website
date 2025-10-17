@@ -19,7 +19,20 @@ Welcome to **Community Voice**. This is a web-based platform that empowers **Ber
 
 ## Conceptual Diagram
 
-![Conceptual Diagram](pages/images/conceptrual_diagram.png)
+```mermaid
+graph TD
+
+  A[User submits report]
+  B[Report saved to database]
+  C[User views and edits report]
+  D[Report processed]
+  E[User receives result]
+
+  A --> B
+  B --> C
+  C --> D
+  D --> E
+```
 
 ## Architecture Diagram
 
