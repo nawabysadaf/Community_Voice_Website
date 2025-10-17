@@ -36,7 +36,27 @@ graph TD
 
 ## Architecture Diagram
 
-![Architecture Diagram](pages/images/architecture_diagram.png)
+```mermaid
+graph TD
+
+  User["User (Browser)"]
+  UI["HTML/CSS/JS (Frontend)"]
+  Node["Node.js Server (Backend)"]
+  Mongoose[Mongoose]
+  MongoDB["(MongoDB Database)"]
+  Process[Report Processing]
+  Result[Result Notification]
+
+  User --> UI
+  UI --> Node
+  Node --> Mongoose
+  Mongoose --> MongoDB
+  UI <-- Node
+  UI --> Node
+  Node --> Process
+  Process --> Result
+  Result --> UI
+```
 
 ## Project Dependencies
 
