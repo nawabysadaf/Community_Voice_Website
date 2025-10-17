@@ -145,7 +145,7 @@ At this time, the following contributions are **not accepted**:
 
 ## Ground Rules
 
-Before submitting feedback or suggestions, please read the [Code of Conduct](code-of-conduct) to understand the community guidelines and expectations.
+Before submitting feedback or suggestions, please read the [Code of Conduct](#code-of-conduct) to understand the community guidelines and expectations.
 
 ## Share Ideas
 
@@ -163,7 +163,7 @@ Make sure you have:
 
 ## Contribution Workflow
 
-1. **Fork and Clone Repositories** check the [Installation Steps](Installation-Steps)
+1. **Fork and Clone Repositories** check the [Installation Steps](#Installation-Steps)
 2. **Report Issues and Bugs**
    - Open an issue in the repository.
    - Clearly describe the problem, steps to reproduce, expected behavior, and any relevant screenshots.
@@ -174,9 +174,9 @@ Make sure you have:
      ```
 4. **Branch Creation**
    - Create a new branch for each issue or feature:
-   ```bash
-   git checkout -b feature/short-description
-   ```
+     ```bash
+     git checkout -b feature/short-description
+     ```
 5. **Pull Requests**
    - As a solo project, pull requests are not currently accepted. For suggestions, open an issue or contact me directly.
 
