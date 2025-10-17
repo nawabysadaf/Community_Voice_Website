@@ -5,11 +5,12 @@ Live Demo: [Community Voice Demo](https://communityvoice.onrender.com)
 
 # Table of Contents
 - [Project Description](#project-description)
+- [Conceptual Diagram](#Conceptual-diagram)
+- [Architecture Diagram](#Architecture-Diagram)
 - [Project Dependencies](#project-dependencies)
 - [Community Voice Installation Guide](#community-voice-installation-guide)
 - [Troubleshooting](#troubleshooting)
 - [Contributing Guidelines](#contributing-guidelines)
-- [Additional Documentation](#additional-documentation)
 - [Code of Conduct](#code-of-conduct)
 - [Contact](#contact)
 
@@ -81,18 +82,18 @@ After cloning the repository, run `npm install` to install these packages:
 |-----------|------------------------------|
 | nodemon   | Automatically restarts server on code changes |
 
-# Community Voice Installation Guide
+## Community Voice Installation Guide
 
 This guide explains the steps and instructions required to install **Community Voice** on supported operating systems. It also covers how to configure, start, use, and uninstall Community Voice.
 
-## Intended Result
+### Intended Result
 
 After installation, you'll be able to:
 - Run the app using `npm start`
 - Access the app at `http://localhost:3000`
 - Use the website to record a report
 
-## Installation Process Summary
+### Installation Process Summary
 
 | Step | Description                                            | More Information               |
 |------|--------------------------------------------------------|-------------------------------|
@@ -108,7 +109,7 @@ After installation, you'll be able to:
 - macOS 11+
 - Linux (Ubuntu 20.04+)
 
-## Before You Begin
+### Before You Begin
 
 Make sure you have the following prerequisites installed:
 - [Node.js](https://nodejs.org/) v18 or higher
@@ -159,14 +160,12 @@ To uninstall Community Voice, remove the project directory:
 
 If you encounter any other issues, please [contact us](mailto:sadafnawaby@gmail.com) or [open an issue](https://github.com/nawabysadaf/community-voice/issues).
 
-## Concept
-
 ## Contributing Guidelines
 
 Welcome to the **CommunityVoice Contributing Guide**. Thank you for your interest.  
 As this is a solo project, contributions are currently limited, but you’re welcome to suggest ideas, report issues, or request features.
 
-## Accepted Contributions
+### Accepted Contributions
 
 - **Ideas & Suggestions**
   - Feature requests
@@ -177,32 +176,32 @@ As this is a solo project, contributions are currently limited, but you’re wel
   - Reporting reproducible bugs
   - Suggesting fixes
 
-## Unaccepted Contributions
+### Unaccepted Contributions
 
 At this time, the following contributions are **not accepted**:
 - Direct code changes via pull requests
 - Large-scale refactoring
 - New modules or major features
 
-## Ground Rules
+### Ground Rules
 
 Before submitting feedback or suggestions, please read the [Code of Conduct](#code-of-conduct) to understand the community guidelines and expectations.
 
-## Share Ideas
+### Share Ideas
 
 To propose new ideas for the project:
 1. Open an issue in the repository describing your idea.
 2. Include relevant details, examples, or mockups.
 3. Engage in discussion via comments.
 
-## Before You Start
+### Before You Start
 
 Make sure you have:
 - A GitHub account (or relevant platform account)
 - Basic familiarity with Git
 - Access to the project's README and documentation
 
-## Contribution Workflow
+### Contribution Workflow
 
 1. **Fork and Clone Repositories** check the [Installation Steps](#Installation-Steps)
 2. **Report Issues and Bugs**
