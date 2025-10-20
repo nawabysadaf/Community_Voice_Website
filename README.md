@@ -25,14 +25,14 @@ graph TD
 
   A[User submits report]
   B[Report saved to database]
-  C[User views and edits report]
-  D[Report processed]
-  E[User receives result]
+  C[User views report]
+  D[User can edit report]
+  E[User can delete report]
 
   A --> B
   B --> C
   C --> D
-  D --> E
+  C --> E
 ```
 
 ## Architecture Diagram
