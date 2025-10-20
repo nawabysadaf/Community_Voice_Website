@@ -46,7 +46,6 @@ graph TD
   Mongoose[Mongoose]
   MongoDB["(MongoDB Database)"]
   Process[Report Processing]
-  Result[Result Notification]
 
   User --> UI
   UI --> Node
@@ -55,8 +54,6 @@ graph TD
   UI <-- Node
   UI --> Node
   Node --> Process
-  Process --> Result
-  Result --> UI
 ```
 
 ## Project Dependencies
