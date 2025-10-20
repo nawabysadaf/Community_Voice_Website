@@ -45,7 +45,6 @@ graph TD
   Node["Node.js Server (Backend)"]
   Mongoose[Mongoose]
   MongoDB["(MongoDB Database)"]
-  Process[Report Processing]
 
   User --> UI
   UI --> Node
@@ -53,7 +52,6 @@ graph TD
   Mongoose --> MongoDB
   UI <-- Node
   UI --> Node
-  Node --> Process
 ```
 
 ## Project Dependencies
