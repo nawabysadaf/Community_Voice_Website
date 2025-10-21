@@ -36,7 +36,7 @@ Make sure you have the following prerequisites installed:
 
 ### Local Installation
 
-1. [**Download the Zip file**](https://github.com/nawabysadaf/community-voice/archive/refs/heads/main.zip) from GitHub, or clone the repository:
+1. [**Download the Zip file**](https://github.com/nawabysadaf/Community_Voice_Website/archive/refs/heads/main.zip) from GitHub, or clone the repository:
 ```bash
     git clone https://github.com/nawabysadaf/community-voice.git
 ```
@@ -74,4 +74,4 @@ Make sure you have the following prerequisites installed:
 
 ---
 
-If you encounter any other issues, please [contact us](mailto:sadafnawaby@gmail.com) or [open an issue](https://github.com/nawabysadaf/community-voice/issues).
+If you encounter any other issues, please [contact us](README.md#contact).
