@@ -5,215 +5,52 @@ Live Demo: [Community Voice Demo](https://communityvoice.onrender.com)
 
 # Table of Contents
 - [Project Description](#project-description)
-- [Conceptual Diagram](#Conceptual-diagram)
-- [Architecture Diagram](#Architecture-Diagram)
+- [Who is the Project for?](#Who-is-the-project-for?)
 - [Project Dependencies](#project-dependencies)
-- [Community Voice Installation Guide](#community-voice-installation-guide)
-- [Troubleshooting](#troubleshooting)
+- [Instructions for Using Project](#Instructions-for-Using-project)
+- [Conceptual and Architecture Overview](#Conceptual-and-architecture-overview)
 - [Contributing Guidelines](#contributing-guidelines)
 - [Code of Conduct](#code-of-conduct)
 - [Contact](#contact)
 
 ## Project Description
 
-Welcome to **Community Voice**. This is a web-based platform that empowers **Berlin** citizens to report city infrastructure issues—like potholes, broken lights, or damaged signs—directly to the local municipality. By connecting residents with city services, the platform encourages civic engagement and helps improve urban living conditions.
+Welcome to **CommunityVoice**. With **CommunityVoice**, you can submit reports about city infrastructure issues like potholes, broken lights, or damaged signs right from your browser. This project helps Berlin residents document problems in their neighborhoods and encourages civic engagement.
+Unlike official city portals or apps, **CommunityVoice** is currently a solo project and does not yet connect reports to any municipal services or authorities. For now, it serves as a proof of concept for a community-driven reporting platform, allowing users to record and manage their own reports.
+**Limitation**: At this stage, **CommunityVoice** does not forward reports to city officials or external systems. It’s best used for personal record-keeping or demonstration purposes.
 
-## Conceptual Diagram
-
-```mermaid
-graph TD
-
-  A[User submits report]
-  B[Report saved to database]
-  C[User views report]
-  D[User can edit report]
-  E[User can delete report]
-
-  A --> B
-  B --> C
-  C --> D
-  C --> E
-```
-
-## Architecture Diagram
-
-```mermaid
-graph TD
-
-  User["User (Browser)"]
-  UI["HTML/CSS/JS (Frontend)"]
-  Node["Node.js Server (Backend)"]
-  Mongoose[Mongoose]
-  MongoDB["(MongoDB Database)"]
-
-  User --> UI
-  UI --> Node
-  Node --> Mongoose
-  Mongoose --> MongoDB
-  UI <-- Node
-  UI --> Node
-```
+## Who is the Project for?
+This project is intended for people in Germany, especially Berlin, who want to easily report infrastructure issues. **CommunityVoice** aims to help residents document problems and, in the future, connect directly with local government to support city improvement.
 
 ## Project Dependencies
 
-After cloning the repository, run `npm install` to install these packages:
+To use **CommunityVoice**, you’ll need a few tools and some basic familiarity with installing software:
 
-| Package             | Purpose/Usage                       |
-|---------------------|-------------------------------------|
-| dotenv              | Loads environment variables         |
-| ejs                 | Templating engine                   |
-| express             | Web server framework                |
-| express-session     | Session management for Express      |
-| express-validator   | Validation for Express requests     |
-| gridfs-stream       | Streams files to MongoDB GridFS     |
-| method-override     | Allows HTTP verbs like PUT/DELETE   |
-| mongodb             | MongoDB driver                      |
-| mongoose            | MongoDB object modeling             |
-| serve-favicon       | Serves favicon for Express apps     |
+- **Node.js & npm:** Required to run and manage the application.  
+  [Download Node.js](https://nodejs.org/en/download/)
+- **MongoDB:** Needed to store report data.  
+  [Download MongoDB](https://www.mongodb.com/try/download/community)
+- **Basic command line and Git knowledge:** Helpful for cloning the repository and running commands.
 
-**Development Only:**
+The app uses these main libraries:
+- **Express:** Handles web server and routing.
+- **Mongoose:** Simplifies working with MongoDB.
+- **EJS:** Renders dynamic web pages.
+- **nodemon (development only):** Automatically restarts the server during development.
 
-| Package   | Purpose/Usage                 |
-|-----------|------------------------------|
-| nodemon   | Automatically restarts server on code changes |
+After cloning the repository, run `npm install` to set up all required packages.
 
-## Community Voice Installation Guide
+## Instructions for Using Project
 
-This guide explains the steps and instructions required to install **Community Voice** on supported operating systems. It also covers how to configure, start, use, and uninstall Community Voice.
+For step-by-step guides on installing, configuring, running, and troubleshooting **CommunityVoice**, please visit the [Installation & Troubleshooting Guide](PROCEDURAL_DOC_INSTALLATION.md).
 
-### Intended Result
+## Conceptual and Architecture Overview
 
-After installation, you'll be able to:
-- Run the app using `npm start`
-- Access the app at `http://localhost:3000`
-- Use the website to record a report
-
-### Installation Process Summary
-
-| Step | Description                                            | More Information               |
-|------|--------------------------------------------------------|-------------------------------|
-| 1    | [Check system requirements](#system-requirements)      | System requirements details    |
-| 2    | [Install prerequisites](#before-you-begin)             | Prerequisite software/tools    |
-| 3    | [Follow installation steps](#installation-steps)       | Step-by-step instructions      |
-| 4    | [Verify installation](#verify-installation)            | How to confirm installation    |
-
-## System Requirements
-
-### Supported Operating Systems
-- Windows 10+
-- macOS 11+
-- Linux (Ubuntu 20.04+)
-
-### Before You Begin
-
-Make sure you have the following prerequisites installed:
-- [Node.js](https://nodejs.org/) v18 or higher
-- [npm](https://www.npmjs.com/) v9 or higher
-- [Git](https://git-scm.com/) (if cloning the repository)
-
-## Installation Steps
-
-### Local Installation
-
-1. **Download the Zip file** from GitHub, or clone the repository:
-```bash
-    git clone https://github.com/your-username/community-voice.git
-```
-
-2. **Navigate** into the project directory:
-```bash
-    cd community-voice
-```
-
-3. **Install** dependencies:
-```bash
-    npm install
-```
-
-4. **Start** the server:
-```bash
-    npm start
-```
-
-### Verify Installation
-- Open your browser and go to [http://localhost:3000](http://localhost:3000)
-- You should see the Community Voice homepage.
-- Try recording a report to confirm the website is functioning as intended.
-
-### Uninstall Option
-To uninstall Community Voice, remove the project directory:
-```bash
-    rm -rf community-voice
-```
-
-## Troubleshooting
-
-| Problem                          | Cause                                   | Solution                                                                                 |
-|-----------------------------------|-----------------------------------------|------------------------------------------------------------------------------------------|
-| Server Fails to Start             | Missing dependencies or incorrect Node.js version | - Ensure Node.js v18+ is installed.<br>- Run:<br> <pre>npm install<br>npm start</pre>    |
-| Port 3000 Is Already in Use       | Another application is using port 3000  | - Close the conflicting application or process.<br>- Or, start Community Voice on a different port:<br> <pre>PORT=4000 npm start</pre> |
-
-If you encounter any other issues, please [contact us](mailto:sadafnawaby@gmail.com) or [open an issue](https://github.com/nawabysadaf/community-voice/issues).
+To explore how **CommunityVoice** works behind the scenes, including its core concepts and system design, please visit the [Conceptual & Architecture Diagrams](CONCEPTUAL_GUIDE_DIAGRAMS.md).
 
 ## Contributing Guidelines
 
-Welcome to the **CommunityVoice Contributing Guide**. Thank you for your interest.  
-As this is a solo project, contributions are currently limited, but you’re welcome to suggest ideas, report issues, or request features.
-
-### Accepted Contributions
-
-- **Ideas & Suggestions**
-  - Feature requests
-  - Improvements to documentation
-  - General feedback
-
-- **Bug Reports**
-  - Reporting reproducible bugs
-  - Suggesting fixes
-
-### Unaccepted Contributions
-
-At this time, the following contributions are **not accepted**:
-- Direct code changes via pull requests
-- Large-scale refactoring
-- New modules or major features
-
-### Ground Rules
-
-Before submitting feedback or suggestions, please read the [Code of Conduct](#code-of-conduct) to understand the community guidelines and expectations.
-
-### Share Ideas
-
-To propose new ideas for the project:
-1. Open an issue in the repository describing your idea.
-2. Include relevant details, examples, or mockups.
-3. Engage in discussion via comments.
-
-### Before You Start
-
-Make sure you have:
-- A GitHub account (or relevant platform account)
-- Basic familiarity with Git
-- Access to the project's README and documentation
-
-### Contribution Workflow
-
-1. **Fork and Clone Repositories** check the [Installation Steps](#Installation-Steps)
-2. **Report Issues and Bugs**
-   - Open an issue in the repository.
-   - Clearly describe the problem, steps to reproduce, expected behavior, and any relevant screenshots.
-3. **Commit Messages**
-   - Use clear, descriptive commit messages.
-     ```bash
-     Fix typo in README
-     ```
-4. **Branch Creation**
-   - Create a new branch for each issue or feature:
-     ```bash
-     git checkout -b feature/short-description
-     ```
-5. **Pull Requests**
-   - As a solo project, pull requests are not currently accepted. For suggestions, open an issue or contact me directly.
+If you’re interested in contributing or learning more about our project’s community standards, please read the [Contributing Guidelines](CONTRIBUTOR_GUIDE.md).
 
 ## Code of Conduct
 
