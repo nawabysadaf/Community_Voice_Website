@@ -57,3 +57,5 @@ Make sure you have:
      ```
 5. **Pull Requests**
    - As a solo project, pull requests are not currently accepted. For suggestions, open an issue or contact me directly.
+
+**Note:** If you have any questions or need further assistance, feel free to [contact](README.md#contact) us at any time.
