@@ -5,7 +5,7 @@ Live Demo: [Community Voice Demo](https://communityvoice.onrender.com)
 
 # Table of Contents
 - [Project Description](#project-description)
-- [Who is the Project for?](#Who-is-the-project-for)
+- [Who is the Project for](#Who-is-the-project-for)
 - [Project Dependencies](#project-dependencies)
 - [Instructions for Using Project](#Instructions-for-Using-project)
 - [Conceptual and Architecture Overview](#Conceptual-and-architecture-overview)
