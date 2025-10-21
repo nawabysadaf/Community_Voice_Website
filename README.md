@@ -1,11 +1,11 @@
 # ![Project Logo](pages/images/readme-logo.jpg)  
 
-# Community Voice – Berlin City Issue Reporting Platform
-Live Demo: [Community Voice Demo](https://communityvoice.onrender.com)
+# CommunityVoice – Berlin City Issue Reporting Platform
+Live Demo: [**CommunityVoice Demo**](https://communityvoice.onrender.com)
 
 # Table of Contents
 - [Project Description](#project-description)
-- [Who is the Project for](#Who-is-the-project-for)
+- [Who Is the Project For](#Who-is-the-project-for)
 - [Project Dependencies](#project-dependencies)
 - [Instructions for Using Project](#Instructions-for-Using-project)
 - [Conceptual and Architecture Overview](#Conceptual-and-architecture-overview)
@@ -19,7 +19,7 @@ Welcome to **CommunityVoice**. With **CommunityVoice**, you can submit reports a
 Unlike official city portals or apps, **CommunityVoice** is currently a solo project and does not yet connect reports to any municipal services or authorities. For now, it serves as a proof of concept for a community-driven reporting platform, allowing users to record and manage their own reports.
 **Limitation**: At this stage, **CommunityVoice** does not forward reports to city officials or external systems. It’s best used for personal record-keeping or demonstration purposes.
 
-## Who is the Project for?
+## Who Is the Project For?
 This project is intended for people in Germany, especially Berlin, who want to easily report infrastructure issues. **CommunityVoice** aims to help residents document problems and, in the future, connect directly with local government to support city improvement.
 
 ## Project Dependencies
@@ -40,7 +40,7 @@ The app uses these main libraries:
 
 After cloning the repository, run `npm install` to set up all required packages.
 
-## Instructions for Using Project
+## Instructions for Using the Project
 
 For step-by-step guides on installing, configuring, running, and troubleshooting **CommunityVoice**, please visit the [Installation & Troubleshooting Guide](PROCEDURAL_DOC_INSTALLATION.md).
 
