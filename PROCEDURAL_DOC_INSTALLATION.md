@@ -1,1 +1,77 @@
+## Instructions for Using the Project
 
+This guide explains the steps and instructions required to install **Community Voice** on supported operating systems. It also covers how to configure, start, and use **Community Voice**.
+
+## Intended Result
+
+After installation, you'll be able to:
+- Run the app using `npm start`
+- Access the app at `http://localhost:3000`
+- Use the website to record a report
+
+## Installation Process Summary
+
+| Step | Description                                            | More Information               |
+|------|--------------------------------------------------------|-------------------------------|
+| 1    | [Check system requirements](#system-requirements)      | System requirements details    |
+| 2    | [Install prerequisites](#before-you-begin)             | Prerequisite software/tools    |
+| 3    | [Follow installation steps](#installation-steps)       | Step-by-step instructions      |
+| 4    | [Verify installation](#verify-installation)            | How to confirm installation    |
+
+## System Requirements
+
+### Supported Operating Systems
+- Windows 10+
+- macOS 11+
+- Linux (Ubuntu 20.04+)
+
+### Before You Begin
+
+Make sure you have the following prerequisites installed:
+- [Node.js](https://nodejs.org/) v18 or higher
+- [npm](https://www.npmjs.com/) v9 or higher
+- [Git](https://git-scm.com/) (if cloning the repository)
+
+## Installation Steps
+
+### Local Installation
+
+1. [**Download the Zip file**](https://github.com/nawabysadaf/community-voice/archive/refs/heads/main.zip) from GitHub, or clone the repository:
+```bash
+    git clone https://github.com/nawabysadaf/community-voice.git
+```
+
+2. **Navigate** into the project directory:
+```bash
+    cd community-voice
+```
+
+3. **Install** dependencies:
+```bash
+    npm install
+```
+
+4. **Start** the server:
+```bash
+    npm start
+```
+
+### Verify Installation
+- Open your browser and go to [http://localhost:3000](http://localhost:3000)
+- You should see the Community Voice homepage.
+- Try recording a report to confirm the website is functioning as intended.
+
+---
+
+**Note:** If you want to understand how the different parts of Community Voice work together? Check out our [Conceptual & Architecture Diagrams](CONCEPTUAL_GUIDE_DIAGRAMS.md) for a visual overview.
+
+## Troubleshooting
+
+| Problem                          | Cause                                   | Solution                                                                                 |
+|-----------------------------------|-----------------------------------------|------------------------------------------------------------------------------------------|
+| Server Fails to Start             | Missing dependencies or incorrect Node.js version | - Ensure Node.js v18+ is installed.<br>- Run:<br> <pre>npm install<br>npm start</pre>    |
+| Port 3000 Is Already in Use       | Another application is using port 3000  | - Close the conflicting application or process.<br>- Or, start Community Voice on a different port:<br> <pre>PORT=4000 npm start</pre> |
+
+---
+
+If you encounter any other issues, please [contact us](mailto:sadafnawaby@gmail.com) or [open an issue](https://github.com/nawabysadaf/community-voice/issues).
