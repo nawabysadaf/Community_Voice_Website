@@ -60,4 +60,9 @@ Make sure you have:
 
 ---
 
+## Coding Standards
+
+Please review our [Code Comments](CODE_COMMENTS.md) to understand how to comment your code and maintain consistency.
+
+
 **Note:** If you have any questions or need further assistance, feel free to [contact](README.md#contact) us at any time.
