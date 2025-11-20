@@ -53,11 +53,11 @@ We use the following commenting styles throughout the project:
 ```javascript
     // Connect to MongoDB and log connection status
     mongoose
-  .connect(MONGODB_URI,{
-    serverSelectionTimeoutMS: 10000 // 10 seconds
-  })
-  .then(() => console.log("Database connected ✔️"))
-  .catch((error) => console.error(error));
+    .connect(MONGODB_URI,{
+        serverSelectionTimeoutMS: 10000 // 10 seconds
+     })
+     .then(() => console.log("Database connected ✔️"))
+     .catch((error) => console.error(error));
 ```
 
 ### 4: Report Model
@@ -74,7 +74,7 @@ We use the following commenting styles throughout the project:
         required: true,
         unique: true,
     },
-    .../
+    ...
 });
 ```
 
