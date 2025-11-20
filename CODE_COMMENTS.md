@@ -20,8 +20,6 @@ A brief description of the main files and their purpose:
 | `pages/includes`   |  Reusable layout components: navigation, footer, and header    |
 | `package.json` and `package-lock.json`   |  Dependency and configuration management files    |
 
----
-
 ## Commenting Conventions
 
 We use the following commenting styles throughout the project:
@@ -29,8 +27,6 @@ We use the following commenting styles throughout the project:
 - **Inline Comments**: Brief explanations next to specific lines of code.
 - **Block Comments**: Multi-line comments above complex code sections.
 - **File Names**: Each file is named to clearly indicate its purpose.
-
----
 
 ## Key Functions and Classes
 
