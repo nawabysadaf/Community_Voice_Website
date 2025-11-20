@@ -15,7 +15,7 @@ Live Demo: [**CommunityVoice Demo**](https://communityvoice.onrender.com)
 
 ## Project Description
 
-Welcome to the **CommunityVoice**. With **CommunityVoice**, you can submit reports about city infrastructure issues like potholes, broken lights, or damaged signs right from your browser. This project helps Berlin residents document problems in their neighborhoods and encourages civic engagement.
+Welcome to **CommunityVoice**. With **CommunityVoice**, you can submit reports about city infrastructure issues like potholes, broken lights, or damaged signs right from your browser. This project helps Berlin residents document problems in their neighborhoods and encourages civic engagement.
 Unlike official city portals or apps, **CommunityVoice** is currently a solo project and does not yet connect reports to any municipal services or authorities. For now, it serves as a proof of concept for a community-driven reporting platform, allowing users to record and manage their own reports.
 **Limitation**: At this stage, **CommunityVoice** does not forward reports to city officials or external systems. It’s best used for personal record-keeping or demonstration purposes.
 
