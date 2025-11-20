@@ -2,7 +2,6 @@
 
 Welcome to the **CommunityVoice Contributing Guide**. Thank you for your interest. Before making suggestions or reporting bugs, ensure you have the project set up locally. Detailed steps can be found in the [Installation & Troubleshooting Guide](PROCEDURAL_DOC_INSTALLATION.md). 
 As this is a solo project, contributions are currently limited, but you’re welcome to suggest ideas, report issues, or request features.
-
 ## Accepted Contributions
 
 - **Ideas & Suggestions**
