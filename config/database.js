@@ -5,6 +5,7 @@ import 'dotenv/config';
 const MONGODB_URI = process.env.MONGODB_URI; 
 console.log('🔐 MONGODB_URI:', MONGODB_URI); 
 
+// Connect to MongoDB and log connection status
 mongoose
   .connect(MONGODB_URI,{
     serverSelectionTimeoutMS: 10000 // 10 seconds
