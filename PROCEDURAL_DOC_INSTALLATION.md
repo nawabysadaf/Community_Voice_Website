@@ -5,7 +5,6 @@ This guide explains the steps and instructions required to install **Community V
 ## Intended Result
 
 After installation, you'll be able to:
-
 - Run the app using `npm start`
 - Access the app at `http://localhost:3000`
 - Use the website to record a report
