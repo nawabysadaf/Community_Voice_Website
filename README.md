@@ -9,6 +9,7 @@ Live Demo: [**CommunityVoice Demo**](https://communityvoice.onrender.com)
 - [Project Dependencies](#project-dependencies)
 - [Instructions for Using Project](#Instructions-for-Using-project)
 - [Conceptual and Architecture Overview](#Conceptual-and-architecture-overview)
+- [Code Comments](#code-comments)
 - [Contributing Guidelines](#contributing-guidelines)
 - [Code of Conduct](#code-of-conduct)
 - [Contact](#contact)
@@ -47,6 +48,10 @@ For step-by-step guides on installing, configuring, running, and troubleshooting
 ## Conceptual and Architecture Overview
 
 To explore how **CommunityVoice** works behind the scenes, including its core concepts and system design, please visit the [Conceptual & Architecture Diagrams](CONCEPTUAL_GUIDE_DIAGRAMS.md).
+
+## Code Comments
+
+For details on code structure and commenting strategy, check out the [Code Comments](CODE_COMMENTS.md).
 
 ## Contributing Guidelines
 
