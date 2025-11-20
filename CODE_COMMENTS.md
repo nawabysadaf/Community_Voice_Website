@@ -143,3 +143,7 @@ We use the following commenting styles throughout the project:
     }
 
 ```
+
+---
+
+**Note:** For a complete description of **CommunityVoice** and its features, return to the [Main README](README.md).
