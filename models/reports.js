@@ -1,5 +1,6 @@
 import mongoose from "mongoose";
 
+// Mongoose schema for user reports
 const report = new mongoose.Schema({
     name: {
         type: String,
