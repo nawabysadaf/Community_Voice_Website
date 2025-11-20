@@ -10,6 +10,7 @@ import { PORT } from './config/app.js';
 import reportsRouter from './controllers/reports.js';
 import 'dotenv/config'
 
+// Initialize Express app
 const app = express();
 
 // seting the engine to ejs
@@ -40,7 +41,7 @@ app.get('/:page', (request, response) => {
     response.render(`${page}`)
 });
 
-// listener route
+// start server
 app.listen(PORT, () => {
     // console.log(process.env.MONGODB_URI);
     console.log(`starting server on port ${PORT}`)
