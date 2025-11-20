@@ -1,3 +1,4 @@
+// Middleware for logging request details
 export const logger = (request, response, next) => {
     console.log(
       new Date().toUTCString(), 
