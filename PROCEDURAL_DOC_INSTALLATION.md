@@ -63,6 +63,7 @@ Make sure you have the following prerequisites installed:
 
 ---
 
+**Note:** For details on how the code is organized and commented, see our [Code Comments](CODE_COMMENTS.md).
 **Note:** If you want to understand how the different parts of Community Voice work together? Check out our [Conceptual & Architecture Diagrams](CONCEPTUAL_GUIDE_DIAGRAMS.md) for a visual overview.
 
 ## Troubleshooting
