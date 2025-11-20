@@ -1,7 +1,6 @@
 ## Conceptual and Architecture Overview
 
 This document provides a visual overview of **CommunityVoice**, including how users interact with the system and how the main components are structured.
-
 ## Conceptual Diagram
 
 Below is a diagram illustrating how users submit, view, edit, and delete reports within **CommunityVoice**.
