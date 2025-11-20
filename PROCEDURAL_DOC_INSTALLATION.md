@@ -75,4 +75,5 @@ Make sure you have the following prerequisites installed:
 ---
 
 If you encounter any other issues, please [contact us](README.md#contact).
+
 For details on how the code is organized and commented, see our [Code Comments](CODE_COMMENTS.md).
