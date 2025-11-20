@@ -2,8 +2,6 @@
 
 This document explains the commenting strategy used throughout the **Community Voice Website** project. Code comments are provided to make the codebase easy to understand, maintain, and extend.
 
----
-
 ## File Structure Overview
 
 A brief description of the main files and their purpose:
